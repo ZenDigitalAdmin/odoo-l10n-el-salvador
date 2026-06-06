@@ -1,0 +1,16 @@
+id,name,code,state_id/id
+mun_sv_0101,Ahuachapán,0101,state_sv_ah
+mun_sv_0210,Santa Ana,0210,state_sv_sa
+mun_sv_0301,Sonsonate,0301,state_sv_so
+mun_sv_0401,Chalatenango,0401,state_sv_ch
+mun_sv_0501,Santa Tecla,0501,state_sv_ll
+mun_sv_0515,Zaragoza,0515,state_sv_ll
+mun_sv_0614,San Salvador,0614,state_sv_ss
+mun_sv_0701,Cojutepeque,0701,state_sv_cu
+mun_sv_0801,Zacatecoluca,0801,state_sv_pa
+mun_sv_0901,Sensuntepeque,0901,state_sv_ca
+mun_sv_1001,San Vicente,1001,state_sv_sv
+mun_sv_1101,Usulután,1101,state_sv_us
+mun_sv_1201,San Miguel,1201,state_sv_sm
+mun_sv_1301,San Francisco Gotera,1301,state_sv_mo
+mun_sv_1401,La Unión,1401,state_sv_lu

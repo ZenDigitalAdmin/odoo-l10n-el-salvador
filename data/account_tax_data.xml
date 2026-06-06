@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <record id="tax_group_iva_13" model="account.tax.group">
+            <field name="name">IVA</field>
+            <field name="country_id" ref="base.sv"/>
+        </record>
+        
+        <record id="tax_group_retencion_1" model="account.tax.group">
+            <field name="name">Retención</field>
+            <field name="country_id" ref="base.sv"/>
+        </record>
+
+        <record id="tax_iva_13_ventas" model="account.tax">
+            <field name="name">IVA 13% (Ventas)</field>
+            <field name="description">13%</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">13.0</field>
+            <field name="tax_group_id" ref="tax_group_iva_13"/>
+            <field name="country_id" ref="base.sv"/>
+        </record>
+
+        <record id="tax_retencion_1_ventas" model="account.tax">
+            <field name="name">Retención 1% (Ventas)</field>
+            <field name="description">-1%</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">-1.0</field>
+            <field name="tax_group_id" ref="tax_group_retencion_1"/>
+            <field name="country_id" ref="base.sv"/>
+        </record>
+
+    </data>
+</odoo>

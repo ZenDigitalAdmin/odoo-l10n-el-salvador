@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form_l10n_sv" model="ir.ui.view">
+        <field name="name">res.company.form.l10n.sv</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <notebook>
+                    <page string="Facturación Electrónica El Salvador" name="l10n_sv_config">
+                        <group>
+                            <group string="Identificación Fiscal">
+                                <field name="l10n_sv_nit"/>
+                                <field name="l10n_sv_nrc"/>
+                                <field name="l10n_sv_nombre_comercial"/>
+                                <field name="l10n_sv_giro"/>
+                                <field name="l10n_sv_municipio_id"/>
+                            </group>
+                            <group string="Configuración Hacienda (API)">
+                                <field name="l10n_sv_nit_emisor"/>
+                                <field name="l10n_sv_api_user"/>
+                                <field name="l10n_sv_api_password" password="True"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+</odoo>

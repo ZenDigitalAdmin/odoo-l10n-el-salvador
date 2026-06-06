@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_move_form_l10n_sv" model="ir.ui.view">
+        <field name="name">account.move.form.l10n.sv</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_generate_dte_json" 
+                        string="Generar JSON DTE" 
+                        type="object" 
+                        class="btn-primary" 
+                        invisible="move_type not in ('out_invoice', 'out_refund') or state != 'draft'"/>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Facturación Electrónica (DTE)" name="dte_info" invisible="move_type not in ('out_invoice', 'out_refund')">
+                    <group>
+                        <group string="Datos del Documento">
+                            <field name="l10n_sv_dte_tipo_doc" required="move_type in ('out_invoice', 'out_refund')"/>
+                            <field name="l10n_sv_dte_condicion_operacion" required="move_type in ('out_invoice', 'out_refund')"/>
+                        </group>
+                        <group string="Estado MH">
+                            <field name="l10n_sv_dte_codigo_generacion" placeholder="El sistema lo generará al firmar"/>
+                            <field name="l10n_sv_dte_numero_control"/>
+                            <field name="l10n_sv_dte_sello_recepcion"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,20 @@
+{
+    'name': 'Localización de El Salvador - Facturación Electrónica (DTE)',
+    'version': '19.0.1.0.1',
+    'category': 'Accounting/Localizations',
+    'summary': 'Campos fiscales y estructuración para el Ministerio de Hacienda de El Salvador',
+    'author': 'DIAL Studio',
+    'depends': ['base', 'account'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/res.country.state.csv',
+        'data/l10n_sv.municipio.csv',
+        'data/account_tax_data.xml',
+        'views/res_company_views.xml',
+        'views/res_partner_views.xml',
+        'views/account_move_views.xml',  
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}

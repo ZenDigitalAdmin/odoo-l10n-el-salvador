@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_l10n_sv" model="ir.ui.view">
+        <field name="name">res.partner.form.l10n.sv</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="l10n_sv_nombre_comercial"/>
+                <field name="l10n_sv_nit" placeholder="0614-... o 00000000-0"/>
+                <field name="l10n_sv_nrc"/>
+                <field name="l10n_sv_tipo_contribuyente"/>
+                <field name="l10n_sv_giro"/>
+                <field name="l10n_sv_municipio_id" placeholder="Seleccione el municipio MH"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

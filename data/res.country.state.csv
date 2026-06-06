@@ -1,0 +1,15 @@
+id,name,code,l10n_sv_code,country_id/id
+state_sv_ah,Ahuachapán,AH,01,base.sv
+state_sv_sa,Santa Ana,SA,02,base.sv
+state_sv_so,Sonsonate,SO,03,base.sv
+state_sv_ch,Chalatenango,CH,04,base.sv
+state_sv_ll,La Libertad,LI,05,base.sv
+state_sv_ss,San Salvador,SS,06,base.sv
+state_sv_cu,Cuscatlán,CU,07,base.sv
+state_sv_pa,La Paz,PA,08,base.sv
+state_sv_ca,Cabañas,CA,09,base.sv
+state_sv_sv,San Vicente,VI,10,base.sv
+state_sv_us,Usulután,US,11,base.sv
+state_sv_sm,San Miguel,SM,12,base.sv
+state_sv_mo,Morazán,MO,13,base.sv
+state_sv_lu,La Unión,UN,14,base.sv
