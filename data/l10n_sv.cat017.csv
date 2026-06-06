@@ -1,0 +1,16 @@
+id,code,name
+fp_sv_01,01,Efectivo (Billetes y Monedas)
+fp_sv_02,02,Tarjeta de Crédito
+fp_sv_03,03,Tarjeta de Débito
+fp_sv_04,04,Cheque
+fp_sv_05,05,Transferencia Bancaria
+fp_sv_06,06,Dinero Electrónico
+fp_sv_07,07,Criptomonedas
+fp_sv_08,08,Otros
+fp_sv_09,09,Vale
+fp_sv_10,10,Compensación de Deuda
+fp_sv_11,11,Pago Móvil
+fp_sv_12,12,Billetera Electrónica
+fp_sv_13,13,Tarjeta de Regalo
+fp_sv_14,14,Monedero Electrónico
+fp_sv_99,99,Pago en Especie (No Gravado)

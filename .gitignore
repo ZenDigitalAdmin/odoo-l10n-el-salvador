@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# agent-harness-kit
+.harness/harness.db
+.harness/harness.db-shm
+.harness/harness.db-wal
+.harness/current.md
+
+# graphify skill output (dev-only knowledge graph, NOT part of the module)
+graphify-out/

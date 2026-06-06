@@ -1,0 +1,990 @@
+id,code,description
+ae_sv_01111,01111,Cultivo de maíz y otros cereales (excepto arroz y cereales para forrajes)
+ae_sv_01112,01112,Cultivo de fríjol y otras legumbres
+ae_sv_01113,01113,Cultivo de semillas oleaginosas
+ae_sv_01114,01114,Cultivo de plantas para la preparación de semillas de cereales
+ae_sv_01119,01119,Cultivo de cereales (excepto arroz) legumbres y semillas oleaginosas n.c.p.
+ae_sv_01120,01120,Cultivo de arroz
+ae_sv_01131,01131,Cultivo de raíces y tubérculos
+ae_sv_01132,01132,Cultivo de hortalizas de raíces bulbosas o tuberosas
+ae_sv_01133,01133,Cultivo de hortalizas de fruto
+ae_sv_01134,01134,Cultivo de hortalizas de hoja tallo o flor
+ae_sv_01139,01139,Cultivo de hortalizas y melones raíces y tubérculos n.c.p.
+ae_sv_01140,01140,Cultivo de caña de azúcar
+ae_sv_01150,01150,Cultivo de tabaco
+ae_sv_01160,01160,Cultivo de plantas de fibras vegetales
+ae_sv_01191,01191,Cultivo de plantas no perennes para la producción de semillas y flores
+ae_sv_01192,01192,Cultivo de cereales y pastos para la alimentación animal
+ae_sv_01199,01199,Cultivos de plantas no perennes n.c.p.
+ae_sv_01220,01220,Cultivo de frutas tropicales
+ae_sv_01230,01230,Cultivo de cítricos
+ae_sv_01240,01240,Cultivo de frutas de pepita y hueso
+ae_sv_01250,01250,Cultivo de otros frutos y nueces de árboles y arbustos
+ae_sv_01260,01260,Cultivo de coco y otros frutos oleaginosos
+ae_sv_01271,01271,Cultivo de café
+ae_sv_01272,01272,Cultivo de cacao
+ae_sv_01279,01279,Cultivo de plantas para la elaboración de bebidas n.c.p.
+ae_sv_01281,01281,Cultivo de especias y plantas aromáticas
+ae_sv_01282,01282,Cultivo de plantas para la obtención de productos medicinales y farmacéuticos
+ae_sv_01289,01289,Cultivo de especias y plantas aromáticas medicinales y farmacéuticas n.c.p.
+ae_sv_01292,01292,Cultivo de plantas para la obtención de colorantes
+ae_sv_01293,01293,Cultivo de plantas para la obtención de material vegetal trenzable
+ae_sv_01299,01299,Cultivo de otras plantas perennes n.c.p.
+ae_sv_01300,01300,Propagación de plantas
+ae_sv_01410,01410,Cría engorde reproducción de ganado bovino y producción de leche cruda
+ae_sv_01420,01420,Cría de caballos y otros equinos para reproducción
+ae_sv_01430,01430,Cría de camélidos
+ae_sv_01440,01440,Cría de ovejas y cabras para reproducción
+ae_sv_01450,01450,Cría y engorde de cerdos
+ae_sv_01460,01460,Cría de aves de corral y producción de huevos
+ae_sv_01491,01491,Cría de abejas (apicultura) para la obtención de miel y otros productos apícolas
+ae_sv_01492,01492,Cría y reproducción de conejos
+ae_sv_01493,01493,Cría de iguanas y garrobos
+ae_sv_01494,01494,Cría de mariposas y otros insectos
+ae_sv_01499,01499,Cría de otros animales n.c.p.
+ae_sv_01501,01501,Cría de ganado bovino y cultivos en general
+ae_sv_01502,01502,Cría de aves de corral y cultivos en general
+ae_sv_01503,01503,Cría de abejas y cultivos en general
+ae_sv_01504,01504,Cría de cerdos y cultivos en general
+ae_sv_01509,01509,Cultivo de productos agrícolas en combinación con la cría de otros animales n.c.p.
+ae_sv_01611,01611,Suministro de maquinaría agrícola con operadores
+ae_sv_01612,01612,Fumigación de cultivos y control de plagas en relación con la agricultura
+ae_sv_01613,01613,Manejo de sistemas de riego agrícola
+ae_sv_01614,01614,Actividades de preparación plantación o siembra de cultivos y recolección de cosecha
+ae_sv_01619,01619,Actividades de apoyo a la agricultura n.c.p.
+ae_sv_01621,01621,Actividades para mejorar la reproducción el crecimiento y el rendimiento de los animales
+ae_sv_01622,01622,Actividades agropecuarias de arreo pasturaje limpieza realizadas por retribución
+ae_sv_01629,01629,Actividades de apoyo a la ganadería n.c.p.
+ae_sv_01631,01631,Labores poscosecha de preparación de los productos agrícolas
+ae_sv_01632,01632,Servicio de beneficio de café
+ae_sv_01633,01633,Servicio de beneficiado de plantas textiles
+ae_sv_01639,01639,Actividades poscosecha n.c.p.
+ae_sv_01640,01640,Tratamiento de semillas para la propagación
+ae_sv_01700,01700,Caza ordinaria y mediante trampas y actividades de servicios conexos
+ae_sv_02100,02100,Cultivo de árboles explotación de viveros forestales y otras actividades forestales
+ae_sv_02200,02200,Extracción de madera
+ae_sv_02300,02300,Recolección de productos forestales distintos de la madera
+ae_sv_02400,02400,Servicios de apoyo a la silvicultura
+ae_sv_03110,03110,Pesca costera pesca oceánica y aguas internacionales
+ae_sv_03120,03120,Pesca en cuerpos de agua continentales
+ae_sv_03210,03210,Actividades de reproducción cría y engorde de peces crustáceos moluscos y otros organismos de agua salada
+ae_sv_03221,03221,Reproducción cría y engorde de peces crustáceos y moluscos de agua dulce
+ae_sv_03222,03222,Reproducción cría de peces y otros animales acuáticos ornamentales
+ae_sv_03229,03229,Actividades de reproducción cría y engorde de peces crustáceos moluscos y otros animales acuáticos de agua dulce n.c.p.
+ae_sv_07290,07290,Extracción de oro y plata
+ae_sv_08100,08100,Extracción de piedra arena y arcilla
+ae_sv_08930,08930,Extracción de sal mediante evaporación al sol de agua de mar y cocimiento de la salmuera
+ae_sv_08990,08990,Explotación de otras minas y canteras n.c.p.
+ae_sv_09900,09900,Actividades de apoyo para la explotación de otras minas y canteras
+ae_sv_10101,10101,Explotación de rastros y mataderos que realizan actividades de matanza de bovinos y porcinos
+ae_sv_10102,10102,Matanza preparación y conservación de carne de bovinos y porcinos
+ae_sv_10103,10103,Explotación de mataderos que realizan actividades de matanza preparación y envasado de carne de aves de corral
+ae_sv_10104,10104,Fabricación y conservación de embutidos y tripas naturales
+ae_sv_10105,10105,Servicio de conservación molienda y empacado de carnes a cambio de una retribución o por contrato
+ae_sv_10106,10106,Fabricación y conservación de manteca de cerdo y otras grasas de origen animal
+ae_sv_10109,10109,Fabricación y conservación de carne n.c.p.
+ae_sv_10201,10201,Preparación y conservación de pescado crustáceos y moluscos
+ae_sv_10208,10208,Servicio de procesamiento y conservación de pescado crustáceos y moluscos a cambio de una retribución
+ae_sv_10209,10209,Elaboración y conservación de productos de pescado crustáceos y moluscos n.c.p.
+ae_sv_10301,10301,Elaboración conservación y envasado de jugos y concentrados de frutas y hortalizas
+ae_sv_10302,10302,Elaboración y envasado de jaleas mermeladas y frutas deshidratadas
+ae_sv_10309,10309,Elaboración y conservación de frutas legumbres y hortalizas n.c.p.
+ae_sv_10401,10401,Fabricación de aceites y grasas comestibles de origen vegetal y animal
+ae_sv_10402,10402,Fabricación de aceites y grasas no comestibles de origen vegetal y animal
+ae_sv_10408,10408,Servicio de fabricación de aceites y grasas de origen vegetal y animal a cambio de una retribución
+ae_sv_10409,10409,Elaboración de aceites y grasas de origen vegetal y animal n.c.p.
+ae_sv_10501,10501,Fabricación de productos lácteos excepto sorbetes quesos y sucedáneos no lácteos
+ae_sv_10502,10502,Fabricación de sorbetes y helados
+ae_sv_10503,10503,Fabricación de quesos
+ae_sv_10509,10509,Fabricación de productos lácteos n.c.p.
+ae_sv_10611,10611,Molienda de cereales y producción de harinas de cereales y otros granos
+ae_sv_10612,10612,Elaboración de alimentos a base de cereales para el desayuno y similares
+ae_sv_10613,10613,Producción y procesamiento de arroz (beneficio)
+ae_sv_10618,10618,Servicio de molienda de cereales y granos para la producción de harina a cambio de una retribución
+ae_sv_10619,10619,Elaboración de productos de molinería n.c.p.
+ae_sv_10621,10621,Fabricación de almidón
+ae_sv_10628,10628,Servicio de molienda de maíz en húmedo (molino para nixtamal) a cambio de una retribución
+ae_sv_10629,10629,Elaboración de almidones y productos derivados del almidón n.c.p.
+ae_sv_10711,10711,Elaboración de tortillas
+ae_sv_10712,10712,Fabricación de pan galletas y barquillos
+ae_sv_10713,10713,Fabricación de repostería
+ae_sv_10719,10719,Fabricación de productos de panadería n.c.p.
+ae_sv_10721,10721,Fabricación y refinación de azúcar de caña y otros subproductos (ingenios azucareros)
+ae_sv_10722,10722,Molienda de caña de azúcar para la elaboración de dulce de panela y otros productos (trapiches)
+ae_sv_10723,10723,Elaboración de jarabes de azúcar y otros similares
+ae_sv_10728,10728,Servicio de fabricación de azúcar de caña a cambio de una retribución
+ae_sv_10729,10729,Elaboración de azúcar n.c.p.
+ae_sv_10731,10731,Elaboración de productos de dulcería y confitería
+ae_sv_10732,10732,Elaboración de cacao manteca grasa y aceite de cacao
+ae_sv_10733,10733,Elaboración de chocolate y productos de chocolate
+ae_sv_10738,10738,Servicio de fabricación de cacao chocolate y productos de confitería a cambio de una retribución
+ae_sv_10739,10739,Elaboración de cacao chocolate y productos de confitería n.c.p.
+ae_sv_10740,10740,Fabricación de pastas alimenticias (fideos macarrones coditos pasta para lasaña)
+ae_sv_10751,10751,Elaboración de pupusas tamales y otras comidas regionales para la reventa
+ae_sv_10759,10759,Elaboración de comidas y platos preparados para la venta en supermercados n.c.p.
+ae_sv_10791,10791,Elaboración de productos de café incluyendo descafeinado y tostado
+ae_sv_10792,10792,Elaboración de especies sazonadores condimentos y sal yodada
+ae_sv_10793,10793,Elaboración de sopas cremas y consomé
+ae_sv_10794,10794,Fabricación de bocadillos tostados y/o fritos
+ae_sv_10799,10799,Elaboración de otros productos alimenticios n.c.p.
+ae_sv_10800,10800,Elaboración de piensos o alimentos preparados para animales
+ae_sv_11010,11010,Fabricación de aguardiente y licores
+ae_sv_11020,11020,Elaboración de vinos sidras rompope y otros similares
+ae_sv_11030,11030,Fabricación de cerveza y otras bebidas a base de malta
+ae_sv_11041,11041,Fabricación de gaseosas
+ae_sv_11042,11042,Fabricación y envasado de agua purificada
+ae_sv_11043,11043,Elaboración de refrescos
+ae_sv_11048,11048,Servicio de fabricación de bebidas no alcohólicas y producción de aguas minerales embotelladas
+ae_sv_11049,11049,Elaboración de bebidas no alcohólicas y producción de aguas minerales embotelladas n.c.p.
+ae_sv_12000,12000,Elaboración de productos de tabaco
+ae_sv_13111,13111,Preparación de fibras textiles
+ae_sv_13112,13112,Fabricación de hilazas e hilos
+ae_sv_13118,13118,Servicio de preparación e hilatura de fibras textiles a cambio de una retribución
+ae_sv_13119,13119,Preparación e hilatura de fibras textiles n.c.p.
+ae_sv_13121,13121,Fabricación de telas (excluye telas de punto o ganchillo)
+ae_sv_13128,13128,Servicio de fabricación de tejedura de productos textiles a cambio de una retribución
+ae_sv_13129,13129,Tejedura de productos textiles n.c.p.
+ae_sv_13131,13131,Acabado de productos textiles (blanqueado teñido plisado encogimiento estampado)
+ae_sv_13132,13132,Estampado serigráfico de productos textiles y prendas de vestir
+ae_sv_13910,13910,Fabricación de tejidos de punto y ganchillo
+ae_sv_13921,13921,Fabricación de productos textiles para el hogar
+ae_sv_13922,13922,Fabricación de sacos bolsas y otros artículos textiles
+ae_sv_13923,13923,Fabricación de ropa de cama toallas y cortinas
+ae_sv_13929,13929,Fabricación de artículos confeccionados con materiales textiles n.c.p.
+ae_sv_13930,13930,Fabricación de tapices y alfombras
+ae_sv_13941,13941,Fabricación de cuerdas de henequén y otras fibras naturales
+ae_sv_13942,13942,Fabricación de redes de diversos materiales
+ae_sv_13948,13948,Servicio de fabricación de productos trenzables a cambio de una retribución
+ae_sv_13949,13949,Fabricación de cuerdas cordeles bramantes y redes n.c.p.
+ae_sv_13991,13991,Fabricación de adornos etiquetas y otros artículos para prendas de vestir
+ae_sv_13993,13993,Fabricación de adornos y artículos para prendas de vestir bordados manualmente
+ae_sv_13994,13994,Fabricación de artesanías de materiales textiles
+ae_sv_13998,13998,Servicio de bordados en artículos y prendas de tela a cambio de una retribución
+ae_sv_13999,13999,Fabricación de otros productos textiles n.c.p.
+ae_sv_14101,14101,Fabricación de ropa interior para dormir y similares
+ae_sv_14102,14102,Fabricación de ropa para niños
+ae_sv_14103,14103,Fabricación de prendas de vestir para ambos sexos
+ae_sv_14104,14104,Confección de prendas a medida
+ae_sv_14105,14105,Fabricación de prendas de vestir para deportes
+ae_sv_14106,14106,Fabricación de prendas de vestir artesanales de materiales textiles
+ae_sv_14108,14108,Servicio de fabricación de prendas de vestir a cambio de una retribución
+ae_sv_14109,14109,Fabricación de prendas de vestir excepto prendas de piel n.c.p.
+ae_sv_14200,14200,Fabricación de prendas y accesorios de vestir de piel y otros artículos de piel
+ae_sv_14301,14301,Fabricación de calcetines calcetas medias para mujer y otros similares
+ae_sv_14302,14302,Fabricación de ropa interior de tejido de punto
+ae_sv_14309,14309,Fabricación de artículos de punto o ganchillo n.c.p.
+ae_sv_15110,15110,Curtido y adobo de cueros; adobo y teñido de pieles
+ae_sv_15121,15121,Fabricación de maletas bolsos de mano y otros artículos de marroquinería
+ae_sv_15122,15122,Fabricación de monturas accesorios y vainas (talabartería)
+ae_sv_15123,15123,Fabricación de artesanías principalmente de cuero natural y sintético
+ae_sv_15128,15128,Servicio de fabricación de artículos de cuero a cambio de una retribución
+ae_sv_15129,15129,Fabricación de maletas bolsos de mano y artículos similares n.c.p.
+ae_sv_15201,15201,Fabricación de calzado
+ae_sv_15202,15202,Fabricación de partes y accesorios de calzado
+ae_sv_15208,15208,Servicio de fabricación de calzado y partes de calzado a cambio de una retribución
+ae_sv_16100,16100,Aserrado secado y acepilladura de madera
+ae_sv_16210,16210,Fabricación de madera laminada compactada terciada enchapada y contrachapada
+ae_sv_16220,16220,Fabricación de productos de madera utilizados principalmente para la industria de la construcción
+ae_sv_16230,16230,Fabricación de envases y recipientes de madera
+ae_sv_16292,16292,Fabricación de artesanías de madera semillas materiales trenzables
+ae_sv_16299,16299,Fabricación de otros productos de madera corcho paja y materiales trenzables n.c.p.
+ae_sv_17010,17010,Fabricación de pasta de madera papel y cartón
+ae_sv_17020,17020,Fabricación de papel cartón ondulado envases de papel y envases de cartón
+ae_sv_17091,17091,Fabricación de artículos de papel guata de celulosa y cartón de uso doméstico y de higiene
+ae_sv_17098,17098,Servicio de fabricación de otros artículos del papel y cartón a cambio de una retribución
+ae_sv_17099,17099,Fabricación de otros productos de papel y cartón n.c.p.
+ae_sv_18110,18110,Impresión
+ae_sv_18120,18120,Servicios relacionados con la impresión
+ae_sv_18200,18200,Reproducción de grabaciones
+ae_sv_19100,19100,Fabricación productos de hornos de coque
+ae_sv_19201,19201,Fabricación de combustible
+ae_sv_19202,19202,Fabricación de aceites y lubricantes
+ae_sv_19203,19203,Fabricación de productos de asfalto y mezclas asfálticas
+ae_sv_19209,19209,Fabricación de productos de la refinación del petróleo n.c.p.
+ae_sv_20111,20111,Fabricación de materias primas para la fabricación de colorantes
+ae_sv_20112,20112,Fabricación de materiales curtientes naturales y sintéticos
+ae_sv_20113,20113,Fabricación de gases industriales
+ae_sv_20114,20114,Fabricación de alcohol etílico
+ae_sv_20118,20118,Servicio de fabricación de alcohol etílico y otras sustancias químicas básicas
+ae_sv_20119,20119,Fabricación de sustancias químicas básicas n.c.p.
+ae_sv_20121,20121,Fabricación de abonos y fertilizantes
+ae_sv_20128,20128,Servicio de fabricación de abonos y fertilizantes
+ae_sv_20129,20129,Fabricación de abonos y compuestos de nitrógeno n.c.p.
+ae_sv_20130,20130,Fabricación de plástico caucho sintético y mezclas de hule en formas primarias
+ae_sv_20210,20210,Fabricación de plaguicidas y otros productos químicos de uso agropecuario
+ae_sv_20220,20220,Fabricación de pinturas barnices y productos de revestimiento similares
+ae_sv_20231,20231,Fabricación de jabones detergentes y similares para limpiar y pulir
+ae_sv_20232,20232,Fabricación de perfumes cosméticos preparados de tocador y cuidado personal
+ae_sv_20233,20233,Fabricación de productos naturales para uso cosmético
+ae_sv_20238,20238,Fabricación de jabones y detergentes a cambio de una retribución
+ae_sv_20239,20239,Fabricación de jabones y detergentes perfumes y preparados de tocador n.c.p.
+ae_sv_20291,20291,Fabricación de tintas y colores para escribir y pintar
+ae_sv_20292,20292,Fabricación de explosivos cápsulas fulminantes para proyectiles dinamita detonadores
+ae_sv_20293,20293,Fabricación de productos pirotécnicos
+ae_sv_20299,20299,Fabricación de otros productos químicos n.c.p.
+ae_sv_20300,20300,Fabricación de fibras artificiales
+ae_sv_21001,21001,Fabricación de productos farmacéuticos y sustancias químicas medicinales
+ae_sv_21002,21002,Fabricación de productos botánicos para uso farmacéutico
+ae_sv_21008,21008,Servicio de fabricación de medicamentos a cambio de una retribución
+ae_sv_21009,21009,Fabricación de productos farmacéuticos sustancias químicas medicinales y botánicos n.c.p.
+ae_sv_22110,22110,Fabricación de cubiertas y cámaras de caucho; recauchutado y renovación
+ae_sv_22190,22190,Fabricación de otros productos de caucho
+ae_sv_22201,22201,Fabricación de artículos de plástico para el envasado de productos
+ae_sv_22202,22202,Fabricación de artículos plásticos para uso del hogar o personal
+ae_sv_22208,22208,Servicio de fabricación de productos plásticos a cambio de una retribución
+ae_sv_22209,22209,Fabricación de productos plásticos n.c.p.
+ae_sv_23101,23101,Fabricación de vidrio
+ae_sv_23102,23102,Fabricación de recipientes y envases de vidrio
+ae_sv_23108,23108,Servicio de fabricación de vidrio y productos de vidrio a cambio de una retribución
+ae_sv_23109,23109,Fabricación de productos de vidrio n.c.p.
+ae_sv_23910,23910,Fabricación de productos refractarios
+ae_sv_23920,23920,Fabricación de productos de arcilla y adobe para la construcción
+ae_sv_23930,23930,Fabricación de otros productos de porcelana y de cerámica
+ae_sv_23940,23940,Fabricación de cemento cal y yeso
+ae_sv_23950,23950,Fabricación de artículos de hormigón cemento y yeso
+ae_sv_23960,23960,Corte talla y acabado de la piedra
+ae_sv_23990,23990,Fabricación de productos minerales no metálicos n.c.p.
+ae_sv_24100,24100,Industrias básicas de hierro y acero
+ae_sv_24200,24200,Industrias básicas de metales preciosos y otros metales no ferrosos
+ae_sv_24310,24310,Fundición de hierro y acero
+ae_sv_24320,24320,Fundición de metales no ferrosos
+ae_sv_25111,25111,Fabricación de productos metálicos para uso estructural
+ae_sv_25118,25118,Servicio de fabricación de estructuras metálicas a cambio de una retribución
+ae_sv_25120,25120,Fabricación de tanques depósitos y recipientes de metal
+ae_sv_25130,25130,Fabricación de generadores de vapor excepto calderas de agua caliente para calefacción
+ae_sv_25200,25200,Fabricación de armas y municiones
+ae_sv_25910,25910,Forja prensado estampado y laminado de metales; pulvimetalurgia
+ae_sv_25920,25920,Tratamiento y revestimiento de metales; maquinado
+ae_sv_25931,25931,Fabricación de artículos de cuchillería para uso doméstico
+ae_sv_25932,25932,Fabricación de herramientas de mano y otros instrumentos
+ae_sv_25933,25933,Fabricación de artículos de ferretería
+ae_sv_25939,25939,Fabricación de artículos de cuchillería herramientas de mano y ferretería n.c.p.
+ae_sv_25991,25991,Fabricación de envases y artículos conexos de metal
+ae_sv_25992,25992,Fabricación de artículos de uso personal y/o doméstico y artículos sanitarios de metal
+ae_sv_25999,25999,Fabricación de productos elaborados de metal n.c.p.
+ae_sv_26101,26101,Fabricación de componentes y tableros electrónicos
+ae_sv_26108,26108,Servicios de fabricación de componentes electrónicos a cambio de una retribución
+ae_sv_26200,26200,Fabricación y ensamble de computadoras y equipo periférico
+ae_sv_26300,26300,Fabricación de equipo de comunicaciones
+ae_sv_26400,26400,Fabricación de aparatos electrónicos de consumo para audio video radio y televisión
+ae_sv_26510,26510,Fabricación de equipos instrumentos y aparatos de medición prueba navegación y control
+ae_sv_26520,26520,Fabricación de relojes otros mecanismos de medición del tiempo y sus piezas
+ae_sv_26600,26600,Fabricación de equipo de irradiación y equipo electrónico de uso médico y terapéutico
+ae_sv_26700,26700,Fabricación de instrumentos ópticos y equipo fotográfico
+ae_sv_26800,26800,Fabricación de medios magnéticos y ópticos
+ae_sv_27100,27100,Fabricación de motores generadores transformadores eléctricos
+ae_sv_27200,27200,Fabricación de pilas baterías y acumuladores
+ae_sv_27310,27310,Fabricación de cables de fibra óptica
+ae_sv_27320,27320,Fabricación de otros hilos y cables eléctricos
+ae_sv_27330,27330,Fabricación de dispositivos de cableado
+ae_sv_27400,27400,Fabricación de equipo eléctrico de iluminación
+ae_sv_27500,27500,Fabricación y ensamblado de aparatos de uso doméstico
+ae_sv_27900,27900,Fabricación de otros tipos de equipo eléctrico
+ae_sv_28110,28110,Fabricación de motores de combustión interna con pistones turbinas y piezas conexas
+ae_sv_28120,28120,Fabricación de componentes hidráulicos y neumáticos y equipo de propulsión de fluidos
+ae_sv_28131,28131,Fabricación de bombas de aire o de vacío bombas para líquidos compresores
+ae_sv_28132,28132,Fabricación de grifos y válvulas industriales sanitarios y calefacción
+ae_sv_28139,28139,Fabricación de otras bombas compresores grifos y válvulas n.c.p.
+ae_sv_28140,28140,Fabricación de cojinetes equipo mecánico de transmisión engranajes embragues
+ae_sv_28150,28150,Fabricación de hornos hogares quemadores y parrillas mecánicas
+ae_sv_28161,28161,Fabricación de máquinas y equipo para manipular y levantar materiales
+ae_sv_28162,28162,Fabricación de partes y piezas especiales para equipo de elevación y manipulación
+ae_sv_28169,28169,Fabricación de equipo de elevación y manipulación n.c.p.
+ae_sv_28171,28171,Fabricación de maquinaria de oficina electrónica o no electrónica
+ae_sv_28172,28172,Fabricación de herramientas de oficina
+ae_sv_28179,28179,Fabricación de maquinaria y equipo de oficina excepto computadoras n.c.p.
+ae_sv_28180,28180,Fabricación de herramientas manuales con motor autónomo
+ae_sv_28191,28191,Fabricación de maquinaria equipo y accesorios para todo tipo de envasado
+ae_sv_28192,28192,Fabricación y ensamblaje de aparatos y equipo de aire acondicionado ventilación refrigeración
+ae_sv_28199,28199,Fabricación de otros tipos de maquinaria de uso general n.c.p.
+ae_sv_28211,28211,Fabricación de equipo de aspersión y fumigación para uso agropecuario
+ae_sv_28219,28219,Fabricación de maquinaria agropecuaria y forestal n.c.p.
+ae_sv_28221,28221,Fabricación de máquinas herramienta para trabajar metales piedras hueso plástico duro
+ae_sv_28222,28222,Fabricación de máquinas herramienta y sus partes
+ae_sv_28223,28223,Fabricación de piezas y accesorios para equipo industrial
+ae_sv_28229,28229,Fabricación de maquinaria para la conformación de metales y de máquinas herramienta n.c.p.
+ae_sv_28230,28230,Fabricación de maquinaria y equipo para la industria metalúrgica
+ae_sv_28240,28240,Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción
+ae_sv_28251,28251,Fabricación y montaje de hornos para panadería cocinas para tortillerías pupuserías
+ae_sv_28259,28259,Fabricación de maquinaria para la elaboración de alimentos bebidas y tabaco n.c.p.
+ae_sv_28261,28261,Fabricación y ensamblaje de maquinaria para la elaboración de productos textiles y prendas de vestir
+ae_sv_28262,28262,Fabricación de máquinas operadas manualmente para la elaboración de tejidos
+ae_sv_28269,28269,Fabricación de maquinaria para la elaboración de productos textiles prendas y cueros n.c.p.
+ae_sv_28291,28291,Fabricación de máquinas piezas y accesorios para imprenta
+ae_sv_28299,28299,Fabricación de otros tipos de maquinaria de uso especial n.c.p.
+ae_sv_29100,29100,Fabricación y ensamblaje de vehículos automotores
+ae_sv_29200,29200,Fabricación de carrocerías para vehículos automotores; remolques y semirremolques
+ae_sv_29301,29301,Fabricación de tubos de escape y silenciadores para automotores
+ae_sv_29309,29309,Fabricación de partes piezas y accesorios para vehículos automotores n.c.p.
+ae_sv_30110,30110,Fabricación de barcos lanchas botes canoas estructuras flotantes
+ae_sv_30120,30120,Construcción de embarcaciones de recreo y deporte
+ae_sv_30200,30200,Fabricación de locomotoras y material rodante
+ae_sv_30300,30300,Fabricación ensamblaje y reconstrucción de aeronaves y maquinaria conexa
+ae_sv_30400,30400,Fabricación de vehículos militares de combate
+ae_sv_30910,30910,Fabricación y ensamblado de motocicletas y otros vehículos similares
+ae_sv_30921,30921,Fabricación y ensamblaje de bicicletas y otros vehículos similares
+ae_sv_30929,30929,Fabricación y ensamble de bicicletas silla de ruedas y otros vehículos similares n.c.p.
+ae_sv_30990,30990,Fabricación de vehículos de propulsión manual y de tracción animal
+ae_sv_31001,31001,Fabricación de colchones y bases de colchones
+ae_sv_31002,31002,Fabricación de muebles de madera a medida (carpintería)
+ae_sv_31003,31003,Fabricación de muebles de plástico y sus partes
+ae_sv_31004,31004,Fabricación de muebles de madera y sus partes
+ae_sv_31005,31005,Fabricación de muebles de metal y sus partes
+ae_sv_31008,31008,Servicios de fabricación y acabado de muebles a cambio de una retribución
+ae_sv_31009,31009,Fabricación de muebles n.c.p.
+ae_sv_32111,32111,Fabricación de joyas de metales preciosos o comunes chapados
+ae_sv_32118,32118,Servicios de fabricación y ensamble de joyas a cambio de una retribución
+ae_sv_32119,32119,Fabricación de joyas y artículos conexos n.c.p.
+ae_sv_32120,32120,Fabricación de joyas de fantasía bisutería y artículos conexos
+ae_sv_32200,32200,Fabricación de instrumentos musicales (incluye piezas y accesorios)
+ae_sv_32301,32301,Fabricación de artículos y equipo para la práctica de deportes
+ae_sv_32308,32308,Servicio de fabricación de productos deportivos a cambio de una retribución
+ae_sv_32401,32401,Fabricación de juegos de mesa y de salón
+ae_sv_32403,32403,Fabricación de juguetes de toda clase
+ae_sv_32408,32408,Servicio de fabricación de juguetes y juegos a cambio de una retribución
+ae_sv_32409,32409,Fabricación de juegos y juguetes n.c.p.
+ae_sv_32501,32501,Fabricación de instrumentos para uso médico quirúrgico odontológico y veterinario
+ae_sv_32502,32502,Fabricación de materiales para uso médico quirúrgico odontológico y veterinario
+ae_sv_32503,32503,Fabricación de aparatos y piezas protésicas y ortopédicas
+ae_sv_32504,32504,Fabricación de prótesis dentales en laboratorios
+ae_sv_32505,32505,Fabricación de muebles y accesorios de uso médico quirúrgico odontológico y veterinario
+ae_sv_32506,32506,Fabricación de productos oftálmicos
+ae_sv_32508,32508,Servicio de fabricación de aparatos y suministros médico quirúrgicos y odontológicos
+ae_sv_32509,32509,Fabricación de instrumentos y materiales médicos y odontológicos n.c.p.
+ae_sv_32901,32901,Fabricación de lápices bolígrafos sellos y artículos de librería
+ae_sv_32902,32902,Fabricación de escobas cepillos pinceles y otros productos similares
+ae_sv_32903,32903,Fabricación de artesanías de materiales diversos
+ae_sv_32908,32908,Servicios de fabricación de artesanías y otros productos n.c.p. a cambio de una retribución
+ae_sv_32909,32909,Fabricación de otros productos manufacturados n.c.p.
+ae_sv_33111,33111,Reparación y mantenimiento de tuberías depósitos y tanques de metal
+ae_sv_33119,33119,Reparación y mantenimiento de productos elaborados de metal n.c.p.
+ae_sv_33121,33121,Reparación y mantenimiento de maquinaria equipo y piezas de máquinas agrícolas
+ae_sv_33122,33122,Reparación y mantenimiento de maquinaria equipo y máquinas herramientas industriales
+ae_sv_33123,33123,Reparación de aparatos y equipo de aire acondicionado ventilación refrigeración
+ae_sv_33124,33124,Reparación de bombas compresores de aire y de gas
+ae_sv_33129,33129,Reparación y mantenimiento de maquinaria n.c.p.
+ae_sv_33131,33131,Reparación y mantenimiento de equipo de irradiación y equipo electrónico de uso médico
+ae_sv_33132,33132,Reparación y mantenimiento de instrumentos y equipo óptico
+ae_sv_33139,33139,Reparación y mantenimiento de equipo electrónico y óptico n.c.p.
+ae_sv_33141,33141,Reparación de motores generadores y transformadores eléctricos
+ae_sv_33142,33142,Reparación y mantenimiento de aparatos de control y distribución eléctrica
+ae_sv_33149,33149,Reparación y mantenimiento de equipo eléctrico n.c.p.
+ae_sv_33151,33151,Reparación y mantenimiento de aeronaves
+ae_sv_33159,33159,Reparación y mantenimiento de equipo de transporte excepto vehículos automotores n.c.p.
+ae_sv_33191,33191,Instalación reparación y mantenimiento de juegos mecánicos y de feria
+ae_sv_33199,33199,Reparación de otros tipos de equipo n.c.p.
+ae_sv_33200,33200,Instalación de maquinaria y equipo industriales
+ae_sv_35101,35101,Generación de energía eléctrica (térmicas hidroeléctricas turbina de gas combustibles renovables)
+ae_sv_35102,35102,Transmisión de energía eléctrica
+ae_sv_35103,35103,Distribución de energía eléctrica
+ae_sv_35109,35109,Generación transmisión y distribución de energía eléctrica n.c.p.
+ae_sv_35201,35201,Fabricación de gas
+ae_sv_35209,35209,Fabricación de gas; distribución de combustible gaseosos por tuberías n.c.p.
+ae_sv_35301,35301,Suministro de vapor y agua caliente
+ae_sv_35302,35302,Producción de hielo incluido hielo para la elaboración de productos alimenticios
+ae_sv_35309,35309,Suministro de vapor y aire acondicionado n.c.p.
+ae_sv_36000,36000,Captación tratamiento y distribución de agua
+ae_sv_37001,37001,Gestión de sistemas de alcantarillado y de instalaciones de tratamiento de aguas residuales
+ae_sv_37009,37009,Evacuación de aguas residuales n.c.p.
+ae_sv_38111,38111,Recolección y transporte de desechos sólidos no peligrosos de hogares y empresas urbanas
+ae_sv_38112,38112,Recolección y transporte de desechos sólidos no peligrosos de la industria y la construcción
+ae_sv_38119,38119,Recogida de desechos no peligrosos n.c.p.
+ae_sv_38120,38120,Recolección de desechos peligrosos
+ae_sv_38210,38210,Tratamiento y eliminación de desechos no peligrosos
+ae_sv_38220,38220,Tratamiento y eliminación de desechos peligrosos
+ae_sv_38301,38301,Reciclaje de desperdicios y desechos textiles
+ae_sv_38302,38302,Reciclaje de desperdicios y desechos de plástico y caucho
+ae_sv_38303,38303,Reciclaje de desperdicios y desechos de vidrio
+ae_sv_38304,38304,Reciclaje de desperdicios y desechos de papel y cartón
+ae_sv_38305,38305,Reciclaje de desperdicios y desechos metálicos
+ae_sv_38309,38309,Recuperación de materiales n.c.p.
+ae_sv_39000,39000,Actividades de descontaminación y otros servicios de gestión de desechos
+ae_sv_41001,41001,Construcción ampliación y reforma de edificios residenciales
+ae_sv_41002,41002,Construcción ampliación y reforma de edificios no residenciales
+ae_sv_41009,41009,Construcción ampliación y reforma de edificios n.c.p.
+ae_sv_42101,42101,Construcción y reparación de carreteras calles caminos puentes túneles
+ae_sv_42102,42102,Pintado e instalación de señales de tráfico en carreteras y caminos
+ae_sv_42109,42109,Construcción de carreteras y líneas de ferrocarril n.c.p.
+ae_sv_42201,42201,Construcción de líneas de comunicación y energía (cables) de gran longitud
+ae_sv_42202,42202,Perforación de pozos para la obtención de agua en proyectos de servicio público
+ae_sv_42203,42203,Construcción de obras de captación depuración y distribución de agua
+ae_sv_42209,42209,Construcción de proyectos de servicio público n.c.p.
+ae_sv_42901,42901,Construcción de obras hidráulicas (presas obras portuarias ordenamiento hídrico diques)
+ae_sv_42902,42902,Construcción de obras de ingeniería para el saneamiento y control de la contaminación
+ae_sv_42909,42909,Construcción de obras de ingeniería civil n.c.p.
+ae_sv_43110,43110,Demolición
+ae_sv_43120,43120,Preparación de terreno
+ae_sv_43211,43211,Instalación de cables y otros dispositivos eléctricos
+ae_sv_43212,43212,Instalaciones eléctricas para sistemas de alumbrado señalización vial
+ae_sv_43213,43213,Instalación de equipos eléctricos y electrónicos
+ae_sv_43214,43214,Instalación de cableado de redes para computación y televisión por cable
+ae_sv_43215,43215,Instalación de sistemas de seguridad (alarmas contra incendio y/o robo)
+ae_sv_43219,43219,Instalaciones eléctricas n.c.p.
+ae_sv_43221,43221,Instalación de sistemas de calefacción ventilación y acondicionamiento de aire
+ae_sv_43222,43222,Instalación de sistemas y equipo de refrigeración
+ae_sv_43223,43223,Fontanería
+ae_sv_43224,43224,Instalación y mantenimiento de colectores o paneles de energía solar
+ae_sv_43229,43229,Instalación de fontanería calefacción y aire acondicionado n.c.p.
+ae_sv_43291,43291,Instalación de aislamiento térmico acústico y otros
+ae_sv_43292,43292,Instalación de techos estructurales
+ae_sv_43293,43293,Instalación y mantenimiento de ascensores y escaleras eléctricas
+ae_sv_43299,43299,Otras instalaciones para obras de construcción n.c.p.
+ae_sv_43301,43301,Pintura de edificios y de viviendas
+ae_sv_43302,43302,Instalación de cielos falsos vidrios y otros
+ae_sv_43303,43303,Instalación de elementos de cocina armarios empotrados estructura de almacenaje
+ae_sv_43304,43304,Instalación de puertas ventanas marcos escaleras de madera en edificios
+ae_sv_43305,43305,Decoración de edificios residenciales o no residenciales
+ae_sv_43309,43309,Terminación y acabado de edificios n.c.p.
+ae_sv_43901,43901,Alquiler de equipo de construcción y demolición con operarios
+ae_sv_43902,43902,Construcción y mantenimiento de piscinas
+ae_sv_43903,43903,Servicios de albañilería
+ae_sv_43904,43904,Construcción y mantenimiento de cisternas
+ae_sv_43909,43909,Otras actividades especializadas de construcción n.c.p.
+ae_sv_45101,45101,Comercio al por mayor y al por menor de vehículos automotores nuevos
+ae_sv_45102,45102,Comercio al por mayor y al por menor de vehículos automotores usados
+ae_sv_45109,45109,Comercio de vehículos automotores n.c.p.
+ae_sv_45201,45201,Mantenimiento y reparación mecánica de vehículos automotores
+ae_sv_45202,45202,Mantenimiento y reparación eléctrica y electrónica de vehículos automotores
+ae_sv_45203,45203,Enderezado y pintura de vehículos automotores
+ae_sv_45204,45204,Reparaciones de radiadores escapes y silenciadores de vehículos automotores
+ae_sv_45205,45205,Reparación y reconstrucción de vías stop bómper y artículos de fibra de vidrio
+ae_sv_45206,45206,Reparación de llantas de vehículos automotores
+ae_sv_45207,45207,Polarizado de vehículos automotores
+ae_sv_45208,45208,Lavado y pasteado de vehículos automotores (carwash)
+ae_sv_45209,45209,Mantenimiento y reparación de vehículos automotores n.c.p.
+ae_sv_45301,45301,Comercio al por mayor y al por menor de repuestos partes piezas y accesorios nuevos
+ae_sv_45302,45302,Comercio al por mayor y al por menor de repuestos partes piezas y accesorios usados
+ae_sv_45309,45309,Comercio de partes piezas y accesorios para vehículos automotores n.c.p.
+ae_sv_45401,45401,Comercio al por mayor y al por menor de motocicletas
+ae_sv_45402,45402,Comercio de repuestos partes piezas y accesorios de motocicletas
+ae_sv_45403,45403,Mantenimiento y reparación de motocicletas
+ae_sv_45409,45409,Comercio mantenimiento y reparación de motocicletas y sus partes n.c.p.
+ae_sv_46101,46101,Actividades de transacciones comerciales de distribuidores de mercancías
+ae_sv_46102,46102,Comercio al por mayor a cambio de retribución o por contrata
+ae_sv_46103,46103,Actividades de importación y exportación
+ae_sv_46109,46109,Comercio al por mayor a cambio de retribución o por contrata n.c.p.
+ae_sv_46201,46201,Comercio al por mayor de materias primas agrícolas
+ae_sv_46202,46202,Comercio al por mayor de productos de la silvicultura
+ae_sv_46203,46203,Comercio al por mayor de animales vivos
+ae_sv_46209,46209,Comercio al por mayor de materias primas agropecuarias y animales vivos n.c.p.
+ae_sv_46301,46301,Comercio al por mayor de frutas legumbres hortalizas carne productos cárnicos lácteos
+ae_sv_46302,46302,Comercio al por mayor de bebidas alcohólicas
+ae_sv_46303,46303,Comercio al por mayor de tabaco (cigarrillos y puros)
+ae_sv_46304,46304,Comercio al por mayor de productos de panadería farináceos aceites café sal azúcar pastas
+ae_sv_46305,46305,Comercio al por mayor de bebidas no alcohólicas
+ae_sv_46309,46309,Comercio al por mayor de alimentos bebidas y tabaco n.c.p.
+ae_sv_46411,46411,Comercio al por mayor de hilos telas y artículos de mercería
+ae_sv_46412,46412,Comercio al por mayor de artículos de fibras textiles naturales y sintéticas
+ae_sv_46413,46413,Comercio al por mayor de productos textiles para el hogar
+ae_sv_46414,46414,Comercio al por mayor de prendas y accesorios de vestir
+ae_sv_46415,46415,Comercio al por mayor de artículos usados
+ae_sv_46416,46416,Comercio al por mayor de calzado
+ae_sv_46419,46419,Comercio al por mayor de productos textiles prendas de vestir y calzado n.c.p.
+ae_sv_46491,46491,Comercio al por mayor de productos medicinales cosméticos perfumería y productos de limpieza
+ae_sv_46492,46492,Comercio al por mayor de relojes y artículos de joyería
+ae_sv_46493,46493,Comercio al por mayor de electrodomésticos muebles y artículos de iluminación
+ae_sv_46494,46494,Comercio al por mayor de artículos de bazar
+ae_sv_46495,46495,Comercio al por mayor de artículos fotográficos y ópticos
+ae_sv_46496,46496,Comercio al por mayor de artículos de papelería librería revistas y periódicos
+ae_sv_46497,46497,Comercio al por mayor de artículos deportivos juegos y juguetes
+ae_sv_46498,46498,Comercio al por mayor de artículos usados para el hogar
+ae_sv_46499,46499,Comercio al por mayor de otros enseres domésticos n.c.p.
+ae_sv_46510,46510,Comercio al por mayor de computadoras equipo periférico y programas informáticos
+ae_sv_46520,46520,Comercio al por mayor de equipo partes y piezas electrónicos y de telecomunicaciones
+ae_sv_46530,46530,Comercio al por mayor de maquinaria equipo y materiales agropecuarios
+ae_sv_46591,46591,Comercio al por mayor de maquinaria equipo y accesorios para la industria de la madera
+ae_sv_46592,46592,Comercio al por mayor de maquinaria equipo y materiales para la industria gráfica
+ae_sv_46593,46593,Comercio al por mayor de maquinaria equipo y materiales para industrias químicas y plásticos
+ae_sv_46594,46594,Comercio al por mayor de maquinaria equipo y accesorios para la industria metálica
+ae_sv_46595,46595,Comercio al por mayor de equipamiento para uso médico odontológico veterinario
+ae_sv_46596,46596,Comercio al por mayor de maquinaria equipo y partes para la industria de la alimentación
+ae_sv_46597,46597,Comercio al por mayor de maquinaria equipo y partes para industria textil confecciones y cuero
+ae_sv_46598,46598,Comercio al por mayor de maquinaria equipo y accesorios para la construcción y explotación de minas
+ae_sv_46599,46599,Comercio al por mayor de otros tipos de maquinaria y equipo n.c.p.
+ae_sv_46611,46611,Comercio al por mayor de combustibles para automotores aviones barcos maquinaria
+ae_sv_46612,46612,Comercio al por mayor de lubricantes grasas y otros aceites
+ae_sv_46613,46613,Comercio al por mayor de gas propano natural y keroseno
+ae_sv_46619,46619,Comercio al por mayor de combustibles sólidos líquidos gaseosos y productos conexos n.c.p.
+ae_sv_46620,46620,Comercio al por mayor de metales y minerales metalíferos
+ae_sv_46631,46631,Comercio al por mayor de puertas ventanas vitrinas y similares
+ae_sv_46632,46632,Comercio al por mayor de artículos de ferretería cerrajería y pinturería
+ae_sv_46633,46633,Vidrierías
+ae_sv_46634,46634,Comercio al por mayor de madera (no trabajada)
+ae_sv_46639,46639,Comercio al por mayor de materiales para la construcción artículos de ferretería n.c.p.
+ae_sv_46691,46691,Comercio al por mayor de sal industrial sin yodar
+ae_sv_46692,46692,Comercio al por mayor de productos intermedios y desechos de origen textil
+ae_sv_46693,46693,Comercio al por mayor de productos intermedios y desechos de origen metálico
+ae_sv_46694,46694,Comercio al por mayor de productos intermedios y desechos de papel y cartón
+ae_sv_46695,46695,Comercio al por mayor de fertilizantes abonos agroquímicos y productos similares
+ae_sv_46696,46696,Comercio al por mayor de productos intermedios y desechos de origen plástico
+ae_sv_46697,46697,Comercio al por mayor de tintas para imprenta productos curtientes y colorantes
+ae_sv_46698,46698,Comercio al por mayor de productos intermedios y desechos de origen químico y de caucho
+ae_sv_46699,46699,Comercio al por mayor de desperdicios desechos chatarra y otros productos n.c.p.
+ae_sv_46900,46900,Comercio al por mayor no especializada
+ae_sv_47111,47111,Comercio al por menor en supermercados y almacenes surtidos con predominio de alimentos
+ae_sv_47112,47112,Comercio al por menor en tiendas de artículos de primera necesidad
+ae_sv_47113,47113,Comercio al por menor en chalet y quioscos de artículos de primera necesidad
+ae_sv_47119,47119,Comercio al por menor en comercios no especializados con predominio de alimentos n.c.p.
+ae_sv_47191,47191,Comercio al por menor de diversos artículos en almacenes
+ae_sv_47192,47192,Comercio al por menor de diversos artículos en bazares
+ae_sv_47199,47199,Otras actividades de comercio al por menor en comercios no especializados n.c.p.
+ae_sv_47211,47211,Comercio al por menor de frutas legumbres y hortalizas frescas o en conserva
+ae_sv_47212,47212,Comercio al por menor de carnes embutidos huevos y productos cárnicos
+ae_sv_47213,47213,Comercio al por menor de pescado crustáceos moluscos y productos conexos
+ae_sv_47214,47214,Comercio al por menor de productos lácteos
+ae_sv_47215,47215,Comercio al por menor de productos de panadería repostería y galletas
+ae_sv_47219,47219,Comercio al por menor en comercios especializados de alimentos n.c.p.
+ae_sv_47221,47221,Comercio al por menor de hielo
+ae_sv_47223,47223,Comercio al por menor de bebidas alcohólicas (no para el consumo en el lugar de venta)
+ae_sv_47224,47224,Comercio al por menor de bebidas no alcohólicas (no para el consumo en el lugar de venta)
+ae_sv_47229,47229,Comercio al por menor de bebidas en comercios especializados n.c.p.
+ae_sv_47230,47230,Comercio al por menor de productos de tabaco en comercios especializados
+ae_sv_47300,47300,Comercio de combustibles productos lubricantes y refrigerantes para vehículos y motocicletas
+ae_sv_47411,47411,Comercio al por menor de computadoras equipo periférico y programas informáticos
+ae_sv_47412,47412,Comercio de equipo y accesorios de telecomunicación
+ae_sv_47419,47419,Comercio al por menor de computadoras y equipo de telecomunicaciones en comercios n.c.p.
+ae_sv_47420,47420,Comercio al por menor de equipo de sonido y video en comercios especializados
+ae_sv_47510,47510,Comercio al por menor de hilados tejidos y artículos de mercería
+ae_sv_47521,47521,Comercio al por menor de materiales de construcción
+ae_sv_47522,47522,Comercio al por menor de artículos de ferretería
+ae_sv_47523,47523,Comercio al por menor de pinturas lacas barnices y productos de pinturerías
+ae_sv_47524,47524,Comercio al por menor de productos de vidrierías
+ae_sv_47529,47529,Comercio al por menor de artículos de ferretería pinturas y vidrio n.c.p.
+ae_sv_47530,47530,Comercio al por menor de tapices alfombras y revestimientos de paredes y pisos
+ae_sv_47591,47591,Comercio al por menor de muebles de uso doméstico
+ae_sv_47592,47592,Comercio al por menor de artículos de bazar
+ae_sv_47593,47593,Comercio al por menor de aparatos electrodomésticos repuestos y accesorios
+ae_sv_47594,47594,Comercio al por menor de artículos eléctricos y de iluminación
+ae_sv_47595,47595,Comercio al por menor de instrumentos musicales repuestos y accesorios
+ae_sv_47599,47599,Comercio al por menor de aparatos eléctricos muebles y otros enseres domésticos n.c.p.
+ae_sv_47610,47610,Comercio al por menor de libros periódicos y artículos de papelería
+ae_sv_47620,47620,Comercio al por menor de grabaciones de música y de vídeo
+ae_sv_47630,47630,Comercio al por menor de equipo de deporte en comercios especializados
+ae_sv_47640,47640,Comercio al por menor de juegos y juguetes en comercios especializados
+ae_sv_47711,47711,Comercio al por menor de prendas de vestir y accesorios de vestir
+ae_sv_47712,47712,Comercio al por menor de calzado
+ae_sv_47713,47713,Comercio al por menor de artículos de marroquinería y talabartería
+ae_sv_47719,47719,Comercio al por menor de prendas de vestir calzado y artículos de cuero n.c.p.
+ae_sv_47721,47721,Comercio al por menor de productos farmacéuticos materiales y artículos de uso médico
+ae_sv_47722,47722,Comercio al por menor de productos cosméticos y artículos de tocador
+ae_sv_47729,47729,Comercio al por menor de productos farmacéuticos cosméticos y de tocador n.c.p.
+ae_sv_47731,47731,Comercio al por menor de productos de joyería bisutería óptica y relojería
+ae_sv_47732,47732,Comercio al por menor de flores plantas semillas abonos y animales domésticos
+ae_sv_47733,47733,Comercio al por menor de gas propano leña y otros combustibles para uso doméstico
+ae_sv_47734,47734,Comercio al por menor de artesanías artículos cerámicos y recuerdos
+ae_sv_47735,47735,Comercio al por menor de ataúdes lápidas cruces y productos similares
+ae_sv_47739,47739,Comercio al por menor de otros productos nuevos en comercios especializados n.c.p.
+ae_sv_47741,47741,Comercio al por menor de muebles electrodomésticos juguetes y otros artículos usados
+ae_sv_47742,47742,Comercio al por menor de prendas de vestir calzado y otros artículos usados
+ae_sv_47743,47743,Comercio al por menor de libros revistas y otros productos similares usados
+ae_sv_47749,47749,Comercio al por menor de artículos de segunda mano o usados n.c.p.
+ae_sv_47811,47811,Comercio al por menor de frutas y hortalizas en puestos de venta y mercado
+ae_sv_47812,47812,Comercio al por menor de carnes embutidos y productos de granja en puestos
+ae_sv_47813,47813,Comercio al por menor de pescado y mariscos en puestos de venta y mercado
+ae_sv_47814,47814,Comercio al por menor de productos lácteos en puestos de venta y mercado
+ae_sv_47815,47815,Comercio al por menor de productos de panadería galletas y similares en puestos
+ae_sv_47816,47816,Comercio al por menor de bebidas en puestos de venta y mercado
+ae_sv_47817,47817,Comercio al por menor de tabaco en puestos de venta y mercado
+ae_sv_47818,47818,Comercio al por menor de granos básicos y otros productos alimenticios en puestos
+ae_sv_47819,47819,Comercio al por menor de alimentos bebidas y tabaco en puestos n.c.p.
+ae_sv_47821,47821,Comercio al por menor de hilados telas y productos textiles de mercería en puestos
+ae_sv_47822,47822,Comercio al por menor de hamacas y otros productos textiles de fibras en puestos
+ae_sv_47823,47823,Comercio al por menor de artículos textiles para el hogar en puestos
+ae_sv_47824,47824,Comercio al por menor de prendas de vestir accesorios y similares en puestos
+ae_sv_47825,47825,Comercio al por menor de ropa usada en puestos de venta y mercado
+ae_sv_47826,47826,Comercio al por menor de calzado en puestos de venta y mercado
+ae_sv_47827,47827,Comercio al por menor de artículos de marroquinería y talabartería en puestos
+ae_sv_47829,47829,Comercio al por menor de artículos textiles en puestos n.c.p.
+ae_sv_47891,47891,Comercio al por menor de animales flores y productos conexos en puestos
+ae_sv_47892,47892,Comercio al por menor de productos medicinales cosméticos y de limpieza en puestos
+ae_sv_47893,47893,Comercio al por menor de artículos de bazar en puestos de venta y mercado
+ae_sv_47894,47894,Comercio al por menor de libros revistas y artículos de papelería en puestos
+ae_sv_47895,47895,Comercio al por menor de electrodomésticos accesorios para autos en puestos
+ae_sv_47896,47896,Comercio al por menor de equipos accesorios para las comunicaciones en puestos
+ae_sv_47899,47899,Comercio al por menor de otros productos en puestos de venta y mercado n.c.p.
+ae_sv_47911,47911,Comercio al por menor mediante pedidos por catálogos y revistas
+ae_sv_47912,47912,Comercio al por menor de productos a través de Internet (comercio electrónico)
+ae_sv_47913,47913,Comercio al por menor de producto a través de la televisión
+ae_sv_47919,47919,Comercio al por menor por correo o internet n.c.p.
+ae_sv_47991,47991,Comercio al por menor de productos varios realizada por vendedores a domicilio
+ae_sv_47992,47992,Comercio al por menor de agua embotellada realizada a domicilio
+ae_sv_47993,47993,Comercio al por menor realizada por máquinas expendedoras
+ae_sv_47999,47999,Otras actividades de comercio al por menor no realizadas en comercio n.c.p.
+ae_sv_49110,49110,Transporte interurbano de pasajeros por ferrocarril
+ae_sv_49120,49120,Transporte de carga por ferrocarril
+ae_sv_49211,49211,Transporte urbano y suburbano de pasajeros mediante buses y microbuses
+ae_sv_49212,49212,Transporte interdepartamental de pasajeros mediante buses y microbuses
+ae_sv_49219,49219,Transporte urbano y suburbano de pasajeros por vía terrestre n.c.p.
+ae_sv_49221,49221,Transporte internacional de pasajeros por vía terrestre
+ae_sv_49222,49222,Servicio de taxis
+ae_sv_49223,49223,Servicio de alquiler de automóviles privados con conductor (excluye servicio de taxis)
+ae_sv_49224,49224,Servicios de transporte escolar
+ae_sv_49225,49225,Servicios de transporte de personal
+ae_sv_49226,49226,Servicio de transporte de pasajeros bajo la modalidad de plataformas virtuales
+ae_sv_49229,49229,Otras actividades de transporte de pasajeros por vía terrestre n.c.p.
+ae_sv_49231,49231,Transporte urbano y suburbano de carga
+ae_sv_49232,49232,Transporte nacional de carga
+ae_sv_49233,49233,Transporte internacional de carga
+ae_sv_49234,49234,Servicio de mudanza
+ae_sv_49235,49235,Servicio de alquiler de vehículos de carga con conductor
+ae_sv_49236,49236,Transporte urbano y suburbano de carga bajo la modalidad de plataformas virtuales
+ae_sv_49239,49239,Transporte de carga por carretera n.c.p.
+ae_sv_49300,49300,Transporte por tuberías de gases líquidos agua y otros productos
+ae_sv_50110,50110,Transporte de pasajeros marítimo y de cabotaje
+ae_sv_50120,50120,Transporte de carga marítimo y de cabotaje
+ae_sv_50211,50211,Transporte de pasajeros por vías de navegación interiores
+ae_sv_50212,50212,Servicio de alquiler de embarcaciones con conductor o tripulación
+ae_sv_50220,50220,Transporte de carga por vías de navegación interiores
+ae_sv_51101,51101,Transporte aéreo de pasajeros con itinerarios y horarios establecidos
+ae_sv_51102,51102,Servicio de alquiler de aviones helicópteros y otros medios de transporte aéreo
+ae_sv_51103,51103,Transporte de pasajeros por escuelas de aviación con fines de instrucción o recreo
+ae_sv_51109,51109,Transporte de pasajeros por vía aérea n.c.p.
+ae_sv_51201,51201,Transporte de carga por vía aérea
+ae_sv_51202,51202,Alquiler de equipo de transporte aéreo con operadores para el transporte de carga
+ae_sv_52101,52101,Alquiler de instalaciones de almacenamiento en zonas francas
+ae_sv_52102,52102,Alquiler de silos para conservación y almacenamiento de granos
+ae_sv_52103,52103,Alquiler de instalaciones con refrigeración para almacenamiento y conservación
+ae_sv_52109,52109,Almacenamiento y depósito n.c.p.
+ae_sv_52211,52211,Servicio de estacionamiento de vehículos (parqueos)
+ae_sv_52212,52212,Servicios de terminales para el transporte por vía terrestre
+ae_sv_52213,52213,Remolque y asistencia en carretera
+ae_sv_52219,52219,Actividades de servicios vinculadas al transporte terrestre n.c.p.
+ae_sv_52220,52220,Servicios para el transporte acuático
+ae_sv_52230,52230,Servicios para el transporte aéreo
+ae_sv_52240,52240,Manipulación de la carga
+ae_sv_52291,52291,Agencias de tramitaciones aduanales
+ae_sv_52292,52292,Actividades intermediarias relacionadas con el transporte (comisionista)
+ae_sv_52293,52293,Actividades logísticas (planificación diseño y apoyo de operaciones de transporte)
+ae_sv_52299,52299,Otras actividades de apoyo al transporte n.c.p.
+ae_sv_53100,53100,Servicios de correo nacional
+ae_sv_53201,53201,Agencia privada de correo y encomiendas
+ae_sv_53202,53202,Servicio de entrega a domicilio de paquetes
+ae_sv_55101,55101,Servicio de alojamiento prestado en hoteles
+ae_sv_55102,55102,Servicio de alojamiento prestado en moteles
+ae_sv_55103,55103,Servicio de alojamiento prestado en casa de huéspedes
+ae_sv_55104,55104,Servicio de alojamiento prestado en hostal
+ae_sv_55105,55105,Servicio de alojamiento prestado en hospedaje (pensiones)
+ae_sv_55106,55106,Servicio de alojamiento prestado en casa particular
+ae_sv_55109,55109,Actividades de alojamiento para estancias cortas n.c.p.
+ae_sv_55200,55200,Actividades de campamentos parques de vehículos de recreo y parques de caravanas
+ae_sv_55900,55900,Alojamiento n.c.p.
+ae_sv_56101,56101,Restaurantes
+ae_sv_56102,56102,Comedores y merenderos
+ae_sv_56103,56103,Restaurantes de comida rápida cafeterías y comida para llevar
+ae_sv_56104,56104,Pupuserías
+ae_sv_56105,56105,Heladerías o sorbeterías y venta ambulante de helados
+ae_sv_56106,56106,Preparación de alimentos en puestos de mercado de la calle y ambulantes
+ae_sv_56107,56107,Venta de comidas típicas como tamales pastelitos de carne yuca
+ae_sv_56108,56108,Actividades de reparto de comida a domicilio
+ae_sv_56109,56109,Actividades de restaurantes y de servicio móvil de comidas n.c.p.
+ae_sv_56210,56210,Suministros de comida para eventos especiales
+ae_sv_56291,56291,Servicios de provisión de comidas por contrato
+ae_sv_56292,56292,Explotación de instalaciones como comedores cafetines chalets en régimen de concesión
+ae_sv_56299,56299,Otras actividades de servicios de comidas n.c.p.
+ae_sv_56301,56301,Servicio de bebidas en cervecerías
+ae_sv_56302,56302,Preparación y servicio de bebidas no alcohólicas en refresquerías
+ae_sv_56303,56303,Preparación y servicio de bebidas alcohólicas en bares
+ae_sv_56304,56304,Preparación y servicio de bebidas no alcohólicas en cafeterías
+ae_sv_56305,56305,Servicio de expendio de bebidas por vendedores ambulantes
+ae_sv_56309,56309,Actividades de servicio de bebidas para su consumo inmediato n.c.p.
+ae_sv_58110,58110,Edición de libros folletos y publicaciones similares
+ae_sv_58120,58120,Edición de directorios y listas de correos
+ae_sv_58131,58131,Edición de periódicos
+ae_sv_58132,58132,Edición de revista y otras publicaciones periódicas
+ae_sv_58190,58190,Otras actividades de edición
+ae_sv_58200,58200,Edición de programas informáticos (software)
+ae_sv_59110,59110,Producción de películas cinematográficas videos programas y anuncios comerciales
+ae_sv_59120,59120,Actividades de post producción de películas videos y programas de televisión
+ae_sv_59130,59130,Actividades de distribución de películas cinematográficas videos y programas
+ae_sv_59140,59140,Actividades de exhibición de películas cinematográficas y cintas de vídeo
+ae_sv_59200,59200,Actividades de grabación de sonido y edición de música
+ae_sv_60101,60101,Estaciones de radiodifusión
+ae_sv_60109,60109,Transmisiones de radio n.c.p.
+ae_sv_60201,60201,Estaciones de televisión por canal abierto
+ae_sv_60202,60202,Actividades de suscripción y difusión de televisión por cable
+ae_sv_60209,60209,Programación y transmisiones de televisión n.c.p.
+ae_sv_61101,61101,Actividades de operación mantenimiento o facilitación del servicio de telecomunicaciones alámbricas
+ae_sv_61102,61102,Suministro de acceso a Internet por los operadores de la infraestructura alámbricas
+ae_sv_61109,61109,Actividades de telecomunicaciones alámbricas n.c.p.
+ae_sv_61201,61201,Operación mantenimiento o facilitación del servicio de telecomunicaciones inalámbricas
+ae_sv_61202,61202,Suministro de acceso a Internet por los operadores de la infraestructura inalámbricas
+ae_sv_61209,61209,Actividades de telecomunicaciones inalámbricas n.c.p.
+ae_sv_61301,61301,Actividades de operación mantenimiento o facilitación del servicio de telecomunicaciones satelitales
+ae_sv_61309,61309,Actividades de telecomunicaciones por satélites n.c.p.
+ae_sv_61900,61900,Otras actividades de telecomunicaciones
+ae_sv_62011,62011,Servicio de diseño de la estructura y el contenido de sistemas de aplicaciones informáticas
+ae_sv_62012,62012,Servicios de mantenimiento (soporte) de sistemas informáticos
+ae_sv_62013,62013,Diseño de la estructura y el contenido de bases de datos
+ae_sv_62014,62014,Diseño de la estructura y el contenido de páginas WEB
+ae_sv_62019,62019,Actividades de programación informática n.c.p.
+ae_sv_62021,62021,Servicios de consultoría y asesoría en programas de informática
+ae_sv_62022,62022,Servicios de gestión de instalaciones de informática
+ae_sv_62023,62023,Servicios de consultoría y asesoría en equipos de informática
+ae_sv_62029,62029,Actividades de consultoría de informática y de gestión de instalaciones informáticas n.c.p.
+ae_sv_62091,62091,Instalación de programas informáticos y/o configuración de computadoras
+ae_sv_62099,62099,Otras actividades de tecnología de la información y servicios informáticos n.c.p.
+ae_sv_63111,63111,Servicios de procesamiento de datos (procesamiento tabulación preparación de informes)
+ae_sv_63112,63112,Actividades relacionadas con base de datos (preparación almacenamiento y suministro de datos)
+ae_sv_63113,63113,Actividades relacionadas con bases de datos de registro y emisión de documentos de identificación
+ae_sv_63114,63114,Servicios de transmisión de datos hosting y otras actividades relacionadas
+ae_sv_63119,63119,Procesamiento de datos hospedaje y actividades conexas n.c.p.
+ae_sv_63121,63121,Servicios de transmisión de contenidos a través de internet (TV streaming podcast)
+ae_sv_63129,63129,Portales WEB n.c.p.
+ae_sv_63910,63910,Servicios de agencias de noticias
+ae_sv_63990,63990,Otras actividades de servicios de información n.c.p.
+ae_sv_64110,64110,Actividades de servicio del banco central
+ae_sv_64191,64191,Actividades de servicio de bancos comerciales
+ae_sv_64192,64192,Actividades de servicio de cajas de ahorro
+ae_sv_64193,64193,Actividades de servicio de cooperativas de crédito
+ae_sv_64194,64194,Actividades de servicios de entidades dedicadas al envío de remesas
+ae_sv_64199,64199,Otros tipos de intermediación monetaria n.c.p.
+ae_sv_64200,64200,Actividades de sociedades de cartera
+ae_sv_64300,64300,Fondos y sociedades de inversión y entidades financieras similares
+ae_sv_64910,64910,Arrendamiento financiero
+ae_sv_64921,64921,Entidades representantes de bancos extranjeros que realizan intermediación financiera
+ae_sv_64922,64922,Banco de segundo piso
+ae_sv_64923,64923,Actividades de concesión de crédito para compra de vivienda
+ae_sv_64924,64924,Entidades de crédito para el fomento y desarrollo de actividades de producción
+ae_sv_64925,64925,Actividades de servicios financieros de cooperativas de crédito
+ae_sv_64926,64926,Prestamistas y casas de empeño
+ae_sv_64929,64929,Otras actividades de concesión de crédito n.c.p.
+ae_sv_64991,64991,Inversionistas financieros (acciones títulos títulos valores)
+ae_sv_64992,64992,Servicios de factoraje (factoring)
+ae_sv_64999,64999,Otras actividades de servicios financieros n.c.p.
+ae_sv_65110,65110,Seguros de vida (compañías de seguro)
+ae_sv_65121,65121,Servicios de seguros de todo tipo brindados por compañías de seguros
+ae_sv_65122,65122,Casas de fianza (compañías emisoras de fianzas)
+ae_sv_65200,65200,Reaseguros
+ae_sv_65300,65300,Pensión jubilatoria de afiliación no obligatoria
+ae_sv_66110,66110,Administración de mercados financieros
+ae_sv_66120,66120,Actividades bursátiles
+ae_sv_66191,66191,Servicios de asesoría y consultoría financiera
+ae_sv_66199,66199,Otras actividades auxiliares de las actividades de servicios financieros n.c.p.
+ae_sv_66210,66210,Evaluación de riesgos y daños
+ae_sv_66220,66220,Actividades de agentes y corredores de seguros
+ae_sv_66290,66290,Otras actividades auxiliares de las actividades de seguros y fondos de pensiones
+ae_sv_66300,66300,Actividades de administración de fondos
+ae_sv_68102,68102,Actividades de subdivisión de propiedades inmobiliarias en lotes (Lotificación)
+ae_sv_68103,68103,Arrendamiento o alquiler de edificios residenciales y no residenciales
+ae_sv_68104,68104,Compra y venta de edificios residenciales y no residenciales
+ae_sv_68105,68105,Compra y venta de terrenos
+ae_sv_68109,68109,Actividades inmobiliarias realizadas con bienes propios o arrendados n.c.p.
+ae_sv_68201,68201,Arrendamiento o alquiler y venta de bienes inmuebles a cambio de una retribución
+ae_sv_68202,68202,Administración de bienes inmobiliarios
+ae_sv_68209,68209,Actividades inmobiliarias a cambio de una retribución o por contrata n.c.p.
+ae_sv_69101,69101,Asesoramiento y representación legal en las diferentes áreas del derecho
+ae_sv_69102,69102,Asesoramiento en agentes de marcas licencias y patentes
+ae_sv_69103,69103,Actividades notariales
+ae_sv_69109,69109,Actividades jurídicas n.c.p.
+ae_sv_69201,69201,Actividades de contabilidad realizadas en despachos y oficinas contables
+ae_sv_69202,69202,Actividades de auditoría y consultoría contable
+ae_sv_69203,69203,Asesoramiento en materia de impuesto
+ae_sv_69209,69209,Actividades de contabilidad teneduría de libros y auditoría n.c.p.
+ae_sv_70100,70100,Actividades de oficinas centrales
+ae_sv_70201,70201,Servicios de asesoría y consultoría en gestión empresarial
+ae_sv_70202,70202,Servicios de asesoría y consultoría en gestión financiera
+ae_sv_70203,70203,Servicios de asesoría y consultoría en gestión de recursos humanos
+ae_sv_70209,70209,Actividades de consultoría de gestión n.c.p.
+ae_sv_71101,71101,Servicios de arquitectura (consultoría diseño arquitectónico planificación urbana)
+ae_sv_71102,71102,Servicios de ingeniería (diseño consultoría técnica proyectos de ingeniería)
+ae_sv_71103,71103,Servicios de agrimensura topografía cartografía prospección y estudios geofísicos
+ae_sv_71109,71109,Actividades de arquitectura e ingeniería y actividades conexas de consultoría técnica n.c.p.
+ae_sv_71201,71201,Ensayos y análisis de todo tipo de materiales y productos
+ae_sv_71209,71209,Ensayos y análisis técnicos n.c.p.
+ae_sv_72100,72100,Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería
+ae_sv_72200,72200,Investigaciones y desarrollo experimental en el campo de las ciencias sociales y humanidades
+ae_sv_73101,73101,Agencias de publicidad
+ae_sv_73102,73102,Alquiler de espacios y mantenimientos en vallas publicitarias
+ae_sv_73103,73103,Marketing digital y publicidad en redes sociales
+ae_sv_73109,73109,Publicidad n.c.p.
+ae_sv_73200,73200,Estudios de mercado y encuestas de opinión pública
+ae_sv_74101,74101,Actividades de diseñadores gráficos
+ae_sv_74102,74102,Actividades de decoradores de interiores
+ae_sv_74109,74109,Actividades especializadas de diseño n.c.p.
+ae_sv_74200,74200,Actividades de fotografía
+ae_sv_74901,74901,Servicios de consultoría y asesoría en medio ambiente y ecología
+ae_sv_74902,74902,Agencias de contratación de espectáculos
+ae_sv_74903,74903,Servicios de traducción e interpretación
+ae_sv_74904,74904,Servicios de consultoría y asesoría en seguridad
+ae_sv_74905,74905,Servicios de asesoría migratoria
+ae_sv_74909,74909,Otras actividades profesionales científicas y técnicas n.c.p.
+ae_sv_75001,75001,Actividades de atención médica para animales y otros servicios veterinarios
+ae_sv_75009,75009,Actividades veterinarias n.c.p.
+ae_sv_77101,77101,Alquiler de automóviles microbuses buses y otros vehículos de pasajeros (sin conductor)
+ae_sv_77109,77109,Alquiler de camiones remolques y otros vehículos de carga y de recreo (sin conductor) n.c.p.
+ae_sv_77210,77210,Alquiler y arrendamiento de equipo de recreo y deportivo
+ae_sv_77220,77220,Alquiler de cintas de vídeo y discos
+ae_sv_77291,77291,Alquiler de cristalería mesas sillas y otros artículos para eventos
+ae_sv_77292,77292,Alquiler de prendas de vestir y accesorios para ocasiones especiales
+ae_sv_77293,77293,Alquiler de artículos decorativos plantas y otros similares
+ae_sv_77299,77299,Alquiler y arrendamiento de otros efectos personales y enseres domésticos n.c.p.
+ae_sv_77301,77301,Alquiler de maquinaria y equipo sin operarios para uso industrial construcción e ingeniería civil
+ae_sv_77302,77302,Alquiler de equipo y mobiliario de uso médico quirúrgico ortopédico odontológico y hospitalario
+ae_sv_77303,77303,Alquiler con fines operativos de equipo de transporte acuático sin conductor
+ae_sv_77304,77304,Alquiler con fines operativos de equipo de transporte aéreo sin piloto
+ae_sv_77305,77305,Alquiler de maquinaria equipo y mobiliario para el comercio
+ae_sv_77309,77309,Alquiler y arrendamiento de otros tipos de maquinaria equipo y bienes tangibles n.c.p.
+ae_sv_77400,77400,Servicio de patentes marcas franquicias y otros alquileres de activos intangibles
+ae_sv_78100,78100,Actividades de agencias de empleo
+ae_sv_78200,78200,Actividades de agencias de empleo temporal
+ae_sv_78300,78300,Suministro de recursos humanos para diferentes áreas (outsourcing)
+ae_sv_79110,79110,Actividades de agencias de viajes
+ae_sv_79120,79120,Actividades de operadores turísticos
+ae_sv_79901,79901,Venta de ticket o boletos para espectáculos de diversión y entretenimiento
+ae_sv_79909,79909,Otros servicios de reservas y actividades conexas n.c.p.
+ae_sv_80101,80101,Servicios de vigilancia patrullajes guardaespaldas detectives protección de valores
+ae_sv_80102,80102,Servicios de polígrafo identificación dactilográfica y actividades conexas
+ae_sv_80109,80109,Actividades de seguridad privada n.c.p.
+ae_sv_80201,80201,Instalación reparación reconstrucción y ajuste de dispositivos mecánicos o electrónicos de cierre
+ae_sv_80202,80202,Actividades de servicios de sistemas de seguridad (monitoreo de alarmas)
+ae_sv_80209,80209,Actividades de servicios de sistemas de seguridad n.c.p.
+ae_sv_80300,80300,Actividades de servicios de investigadores y detectives privados
+ae_sv_81100,81100,Actividades combinadas de apoyo a instalaciones
+ae_sv_81210,81210,Limpieza general de edificios
+ae_sv_81291,81291,Servicios de limpieza y mantenimiento de piscinas
+ae_sv_81292,81292,Servicios de limpieza de maquinaria industrial
+ae_sv_81293,81293,Actividades de exterminio y desinfección
+ae_sv_81299,81299,Otras actividades de limpieza de edificios e instalaciones industriales n.c.p.
+ae_sv_81300,81300,Actividades de paisajismo y servicios de mantenimiento conexos
+ae_sv_82110,82110,Actividades combinadas de servicios administrativos de oficinas
+ae_sv_82191,82191,Reproducción impresión heliográfica fotocopia y otros
+ae_sv_82192,82192,Trascripción de documentos y otros servicios secretariales
+ae_sv_82199,82199,Fotocopiado preparación de documentos y otras actividades especializadas de apoyo de oficina n.c.p.
+ae_sv_82200,82200,Actividades de centro de llamadas (call center)
+ae_sv_82300,82300,Organización de convenciones y exposiciones comerciales (ferias de negocios)
+ae_sv_82911,82911,Agencia de cobranza
+ae_sv_82912,82912,Recuperación de carteras de crédito
+ae_sv_82919,82919,Actividades de agencias de cobro y agencias de calificación crediticia n.c.p.
+ae_sv_82921,82921,Servicios de envase y empaque de productos alimenticios
+ae_sv_82922,82922,Servicios de envase y empaque de productos medicinales
+ae_sv_82929,82929,Actividades de envasado y empaquetado n.c.p.
+ae_sv_82990,82990,Otras actividades de servicios de apoyo a las empresas n.c.p.
+ae_sv_84111,84111,Actividades de administración pública (Ministerio de Hacienda Corte de Cuentas)
+ae_sv_84112,84112,Actividades de administración local (Alcaldías)
+ae_sv_84119,84119,Actividades de la administración pública en general n.c.p.
+ae_sv_84121,84121,Administración y regulación de las actividades de organismos educativos y culturales
+ae_sv_84122,84122,Administración y regulación de las actividades de organismos que prestan servicios sanitarios
+ae_sv_84123,84123,Administración y regulación de otros servicios sociales excepto seguridad social
+ae_sv_84129,84129,Regulación de actividades de organismos de servicios sanitarios educativos y culturales n.c.p.
+ae_sv_84131,84131,Servicios de administración regulación y facilitación de actividades económicas
+ae_sv_84132,84132,Servicio de administración regulación del sector agropecuario forestal pesquero
+ae_sv_84133,84133,Servicios administrativos de mantenimiento y fomento de actividades relacionadas con turismo
+ae_sv_84134,84134,Servicios administrativos relacionados con los combustibles y la energía
+ae_sv_84135,84135,Regulación y administración de actividades relacionadas con transporte y comunicaciones
+ae_sv_84136,84136,Regulación y administración de actividades de recursos minerales industria y construcción
+ae_sv_84137,84137,Actividades de administración de instituciones de servicios auxiliares para la administración
+ae_sv_84139,84139,Regulación y facilitación de la actividad económica n.c.p.
+ae_sv_84210,84210,Actividades de administración del Ministerio de Relaciones Exteriores y misiones diplomáticas
+ae_sv_84220,84220,Actividades de administración y funcionamiento de los organismos del Ministerio de Defensa
+ae_sv_84231,84231,Actividades de mantenimiento del orden público y seguridad (P.N.C.)
+ae_sv_84232,84232,Actividades de prevención y extinción de incendios (cuerpo de bomberos)
+ae_sv_84233,84233,Servicios correccionales (encarcelamiento y readaptación)
+ae_sv_84234,84234,Actividades de asistencia en desastres inundaciones accidentes
+ae_sv_84235,84235,Actividades del sistema judicial
+ae_sv_84236,84236,Fiscalía General de la República
+ae_sv_84237,84237,Medicina legal
+ae_sv_84239,84239,Actividades de mantenimiento del orden público y de seguridad n.c.p.
+ae_sv_84300,84300,Actividades de planes de seguridad social de afiliación obligatoria
+ae_sv_85101,85101,Guarderías con enseñanza preescolar incluida
+ae_sv_85102,85102,Enseñanza preescolar o parvularia
+ae_sv_85103,85103,Enseñanza primaria (1° a 6° grado)
+ae_sv_85109,85109,Enseñanza preescolar y primaria n.c.p.
+ae_sv_85211,85211,Enseñanza secundaria de tercer ciclo (7° 8° y 9°)
+ae_sv_85212,85212,Enseñanza secundaria de bachillerato general
+ae_sv_85219,85219,Enseñanza secundaria de formación general n.c.p.
+ae_sv_85221,85221,Enseñanza secundaria de bachillerato vocacional
+ae_sv_85229,85229,Enseñanza secundaria de formación técnica y profesional n.c.p.
+ae_sv_85301,85301,Enseñanza superior universitaria
+ae_sv_85302,85302,Enseñanza superior no universitaria o enseñanza técnica
+ae_sv_85309,85309,Enseñanza superior n.c.p.
+ae_sv_85410,85410,Enseñanza deportiva y recreativa (escuelas de deporte yoga y artes marciales)
+ae_sv_85420,85420,Enseñanza cultural (escuelas de música pintura danza arte)
+ae_sv_85491,85491,Escuela de manejo de vehículos automotores
+ae_sv_85492,85492,Escuela de aviación
+ae_sv_85493,85493,Academia de modelaje
+ae_sv_85494,85494,Servicios de profesores particulares
+ae_sv_85495,85495,Academia de enseñanza de idiomas
+ae_sv_85496,85496,Academias o centros de computación
+ae_sv_85499,85499,Otros tipos de enseñanza n.c.p.
+ae_sv_85500,85500,Servicios de apoyo a la enseñanza
+ae_sv_86101,86101,Actividades médicas de diagnóstico y tratamiento de hospitales públicos generales
+ae_sv_86102,86102,Actividades médicas de diagnóstico y tratamiento de hospitales públicos de especialidades
+ae_sv_86103,86103,Actividades médicas de diagnóstico y tratamiento de hospitales privados generales
+ae_sv_86104,86104,Actividades médicas de diagnóstico y tratamiento de hospitales privados de especialidades
+ae_sv_86109,86109,Actividades de hospitales n.c.p.
+ae_sv_86201,86201,Actividades de consulta y tratamiento por médicos generales
+ae_sv_86202,86202,Actividades de atención odontológica de carácter general
+ae_sv_86203,86203,Actividades de consulta y tratamiento por médicos especialistas
+ae_sv_86209,86209,Actividades de médicos y odontólogos n.c.p.
+ae_sv_86901,86901,Laboratorio clínico de análisis y diagnóstico
+ae_sv_86902,86902,Servicios de fisioterapia hidroterapia masaje terapéutico quiropráctica
+ae_sv_86903,86903,Laboratorios de rayos X y de diagnóstico por imágenes
+ae_sv_86904,86904,Servicio de ambulancias y emergencias médicas
+ae_sv_86909,86909,Otras actividades de atención de la salud humana n.c.p.
+ae_sv_87100,87100,Residencias de ancianos con atención de enfermería
+ae_sv_87201,87201,Centros de rehabilitación para personas adictas a estupefacientes alcohol y otras drogas
+ae_sv_87209,87209,Actividades de atención en instituciones para personas con retraso mental y otros n.c.p.
+ae_sv_87300,87300,Actividades de atención en instituciones para personas de edad y personas con discapacidad
+ae_sv_87900,87900,Actividades de asistencia a niños niñas y jóvenes en orfanatos hogares y albergues
+ae_sv_88100,88100,Actividades de asistencia social sin alojamiento para personas de edad y con discapacidad
+ae_sv_88901,88901,Guarderías infantiles
+ae_sv_88902,88902,Servicios de asesoramiento en economía doméstica orientación matrimonial familiar
+ae_sv_88909,88909,Otras actividades de asistencia social sin alojamiento n.c.p.
+ae_sv_90001,90001,Actividades de producción y presentación de obras de teatros espectáculos de danza
+ae_sv_90002,90002,Actividades de grupos musicales orquestas mariachis y artistas individuales
+ae_sv_90003,90003,Actividades de pintores escultores dibujantes y otros
+ae_sv_90004,90004,Actividades de animación de eventos (disc jockey dj sonido luces)
+ae_sv_90009,90009,Actividades creativas artísticas y de entretenimiento n.c.p.
+ae_sv_91010,91010,Actividades de bibliotecas y archivos
+ae_sv_91021,91021,Museos
+ae_sv_91022,91022,Galerías de arte
+ae_sv_91029,91029,Actividades de museos y gestión de lugares y edificios históricos n.c.p.
+ae_sv_91030,91030,Actividades de jardines botánicos zoológicos y de reservas naturales
+ae_sv_92001,92001,Juegos de azar (incluye máquinas de juegos de azar y sitios WEB de juegos virtuales)
+ae_sv_92002,92002,Apuestas (corredores de apuestas)
+ae_sv_92003,92003,Centros y salas de diversión con máquinas y equipos de juegos electrónicos de azar
+ae_sv_92004,92004,Salas de billar
+ae_sv_92005,92005,Casino
+ae_sv_92006,92006,Venta de billetes de lotería (agencia)
+ae_sv_92009,92009,Actividades de juegos de azar y apuestas n.c.p.
+ae_sv_93111,93111,Explotación de estadios gimnasios hipódromo polideportivos
+ae_sv_93112,93112,Explotación de instalaciones deportivas (canchas de football golf)
+ae_sv_93113,93113,Explotación de pistas deportivas para autos y motocicletas
+ae_sv_93119,93119,Gestión de instalaciones deportivas n.c.p.
+ae_sv_93120,93120,Actividades de clubes deportivos
+ae_sv_93190,93190,Otras Actividades deportivas
+ae_sv_93210,93210,Actividades de parques de atracciones y parques temáticos
+ae_sv_93291,93291,Discotecas y salas de baile
+ae_sv_93299,93299,Actividades de esparcimiento n.c.p.
+ae_sv_94111,94111,Asociaciones empresariales y comerciales
+ae_sv_94119,94119,Actividades de asociaciones empresariales y de empleadores n.c.p.
+ae_sv_94120,94120,Actividades de organizaciones profesionales
+ae_sv_94200,94200,Actividades de sindicatos
+ae_sv_94910,94910,Actividades de organizaciones religiosas
+ae_sv_94920,94920,Actividades de organizaciones políticas
+ae_sv_94990,94990,Actividades de otras asociaciones
+ae_sv_95110,95110,Reparación de computadoras y equipo periférico
+ae_sv_95120,95120,Reparación de equipo de comunicación
+ae_sv_95210,95210,Reparación de aparatos electrónicos de consumo (excluye computadoras)
+ae_sv_95220,95220,Reparación de aparatos de uso doméstico y equipo doméstico y jardinería
+ae_sv_95230,95230,Reparación de calzado y artículos de cuero
+ae_sv_95240,95240,Reparación de muebles y accesorios para el hogar
+ae_sv_95291,95291,Reparación de instrumentos musicales
+ae_sv_95292,95292,Servicios de cerrajería y copiado de llaves
+ae_sv_95293,95293,Reparación de joyas y relojes
+ae_sv_95294,95294,Reparación de bicicletas sillas de ruedas y otros similares
+ae_sv_95299,95299,Reparaciones de otros efectos personales y enseres personales n.c.p.
+ae_sv_96010,96010,Lavado y limpieza incluida la limpieza en seco de productos textiles y de piel
+ae_sv_96020,96020,Peluquería y otros tratamientos de belleza
+ae_sv_96031,96031,Servicios fúnebres y actividades conexas
+ae_sv_96032,96032,Cementerios (incluye el mantenimiento de tumbas y mausoleos)
+ae_sv_96033,96033,Servicio de alquiler y venta de lotes en cementerios
+ae_sv_96039,96039,Pompas fúnebres y actividades conexas n.c.p.
+ae_sv_96091,96091,Servicios de sauna y otros servicios para la estética corporal
+ae_sv_96093,96093,Gimnasios centros fitness clases de aeróbicos y baile
+ae_sv_96094,96094,Tatuajes de todo tipo y perforaciones en la piel
+ae_sv_96099,96099,Otras actividades de servicios personales n.c.p.
+ae_sv_97000,97000,Actividad de los hogares en calidad de empleadores de personal doméstico
+ae_sv_98100,98100,Actividades no diferenciadas de los hogares como productores de bienes y servicios para uso propio
+ae_sv_98200,98200,Actividades no diferenciadas de los hogares como productores de servicios para uso propio
+ae_sv_99000,99000,Actividades de organizaciones y órganos extraterritoriales

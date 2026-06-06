@@ -1,0 +1,14 @@
+id,code,name
+tr_sv_20,20,IVA 13%
+tr_sv_C3,C3,IVA Percibido
+tr_sv_C4,C4,Anticipo a cuenta del IVA 2%
+tr_sv_C5,C5,Retención IVA 1% Bienes
+tr_sv_C6,C6,Retención IVA 1% Servicios
+tr_sv_C7,C7,Retención IVA Bienes 13% a Grandes Contribuyentes
+tr_sv_C8,C8,Retención IVA Servicios 13% a Grandes Contribuyentes
+tr_sv_59,59,FOVIAL
+tr_sv_71,71,Turismo
+tr_sv_D1,D1,Impuesto Municipal
+tr_sv_D4,D4,Retención ISR 1%
+tr_sv_D5,D5,Retención ISR 5%
+tr_sv_25,25,Otros Impuestos

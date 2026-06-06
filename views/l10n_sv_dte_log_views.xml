@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="view_l10n_sv_dte_log_tree" model="ir.ui.view">
+            <field name="name">l10n_sv.dte.log.tree</field>
+            <field name="model">l10n_sv.dte.log</field>
+            <field name="arch" type="xml">
+                <tree decoration-danger="not success" decoration-success="success"
+                      decoration-muted="is_automatic">
+                    <field name="attempt_at"/>
+                    <field name="move_id"/>
+                    <field name="operation" widget="badge"
+                           decoration-info="operation == 'send'"
+                           decoration-warning="operation == 'contingencia'"
+                           decoration-danger="operation == 'invalidate'"/>
+                    <field name="attempt_number"/>
+                    <field name="success" widget="boolean_toggle"/>
+                    <field name="status_code"/>
+                    <field name="response_code"/>
+                    <field name="sello_recepcion"/>
+                    <field name="is_automatic" widget="boolean_toggle"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_l10n_sv_dte_log_form" model="ir.ui.view">
+            <field name="name">l10n_sv.dte.log.form</field>
+            <field name="model">l10n_sv.dte.log</field>
+            <field name="arch" type="xml">
+                <form string="Bitácora DTE">
+                    <header>
+                        <field name="success" widget="boolean_toggle" readonly="1"/>
+                        <field name="is_automatic" widget="boolean_toggle" readonly="1"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group string="Identificación">
+                                <field name="move_id" readonly="1"/>
+                                <field name="operation" readonly="1"/>
+                                <field name="attempt_number" readonly="1"/>
+                                <field name="attempt_at" readonly="1"/>
+                            </group>
+                            <group string="Respuesta MH">
+                                <field name="status_code" readonly="1"/>
+                                <field name="response_code" readonly="1"/>
+                                <field name="sello_recepcion" readonly="1"/>
+                            </group>
+                        </group>
+                        <group string="Error" invisible="error_message == False">
+                            <field name="error_message" nolabel="1" readonly="1"
+                                   style="color: #b22222;"/>
+                        </group>
+                        <group string="Respuesta MH (cruda)">
+                            <field name="response_body" nolabel="1" readonly="1"
+                                   widget="ace" options="{'mode': 'json'}"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_l10n_sv_dte_log_search" model="ir.ui.view">
+            <field name="name">l10n_sv.dte.log.search</field>
+            <field name="model">l10n_sv.dte.log</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="move_id"/>
+                    <field name="operation"/>
+                    <field name="sello_recepcion"/>
+                    <filter name="filter_successful" string="Exitosos"
+                            domain="[('success', '=', True)]"/>
+                    <filter name="filter_failed" string="Fallidos"
+                            domain="[('success', '=', False)]"/>
+                    <filter name="filter_automatic" string="Automáticos (cron)"
+                            domain="[('is_automatic', '=', True)]"/>
+                    <group expand="0" string="Agrupar por">
+                        <filter name="group_operation" string="Operación"
+                                context="{'group_by': 'operation'}"/>
+                        <filter name="group_move" string="Factura"
+                                context="{'group_by': 'move_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_l10n_sv_dte_log" model="ir.actions.act_window">
+            <field name="name">Bitácora DTE</field>
+            <field name="res_model">l10n_sv.dte.log</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_filter_failed': 0}</field>
+        </record>
+
+        <menuitem id="menu_l10n_sv_dte_log" name="Bitácora DTE"
+                  parent="menu_l10n_sv_root" action="action_l10n_sv_dte_log"
+                  sequence="60"/>
+
+    </data>
+</odoo>

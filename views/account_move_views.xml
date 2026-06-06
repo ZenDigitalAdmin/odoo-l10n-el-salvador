@@ -6,25 +6,133 @@
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
             <xpath expr="//header" position="inside">
-                <button name="action_generate_dte_json" 
-                        string="Generar JSON DTE" 
-                        type="object" 
-                        class="btn-primary" 
-                        invisible="move_type not in ('out_invoice', 'out_refund') or state != 'draft'"/>
+                <button name="action_generate_dte_json"
+                        string="1. Generar JSON DTE"
+                        type="object"
+                        class="btn-primary"
+                        invisible="move_type not in ('out_invoice', 'out_refund') or state != 'draft' or l10n_sv_dte_state in ('json_generated', 'signed', 'sent', 'processed', 'contingencia', 'invalidating', 'invalidated')"
+                        groups="account.group_account_invoice"/>
+                <button name="action_sign_dte"
+                        string="2. Firmar JWS"
+                        type="object"
+                        class="btn-primary"
+                        invisible="l10n_sv_dte_state != 'json_generated'"/>
+                <button name="action_send_dte"
+                        string="3. Enviar al MH"
+                        type="object"
+                        class="btn-primary"
+                        invisible="l10n_sv_dte_state not in ('signed',)"/>
+                <button name="action_resend_dte"
+                        string="Reenviar DTE"
+                        type="object"
+                        class="btn-warning"
+                        invisible="l10n_sv_dte_state not in ('rejected', 'contingencia')"
+                        confirm="¿Está seguro que desea reenviar este DTE al MH?"/>
+                <button name="action_invalidate_dte"
+                        string="Invalidar DTE"
+                        type="object"
+                        class="btn-secondary"
+                        invisible="l10n_sv_dte_state != 'processed'"
+                        confirm="¿Está seguro que desea invalidar este DTE? Esta acción no se puede deshacer."/>
+                <button name="action_reset_to_draft"
+                        string="Reiniciar a Borrador"
+                        type="object"
+                        class="btn-secondary"
+                        invisible="l10n_sv_dte_state in ('processed', 'invalidating', 'invalidated', 'draft')"
+                        confirm="¿Está seguro? Se borrarán el JSON, el JWS y la respuesta del MH."/>
+                <button name="action_regenerate_qr"
+                        string="Regenerar QR"
+                        type="object"
+                        class="btn-secondary"
+                        invisible="l10n_sv_dte_state != 'processed'"
+                        groups="base.group_no_one"/>
+                <button name="%(l10n_sv_dte.action_l10n_sv_dte_send_wizard)d"
+                        string="Envío Masivo"
+                        type="action"
+                        class="btn-link"
+                        invisible="move_type not in ('out_invoice', 'out_refund')"/>
             </xpath>
 
             <xpath expr="//notebook" position="inside">
-                <page string="Facturación Electrónica (DTE)" name="dte_info" invisible="move_type not in ('out_invoice', 'out_refund')">
+                <page string="Facturación Electrónica (DTE)" name="dte_info"
+                      invisible="move_type not in ('out_invoice', 'out_refund')">
                     <group>
                         <group string="Datos del Documento">
-                            <field name="l10n_sv_dte_tipo_doc" required="move_type in ('out_invoice', 'out_refund')"/>
-                            <field name="l10n_sv_dte_condicion_operacion" required="move_type in ('out_invoice', 'out_refund')"/>
+                            <field name="l10n_sv_dte_tipo_doc"
+                                   required="move_type in ('out_invoice', 'out_refund')"/>
+                            <field name="l10n_sv_dte_condicion_operacion"
+                                   required="move_type in ('out_invoice', 'out_refund')"/>
+                            <field name="l10n_sv_dte_state" widget="badge"
+                                   decoration-info="l10n_sv_dte_state in ('json_generated', 'signed', 'sent')"
+                                   decoration-success="l10n_sv_dte_state in ('processed', 'invalidated')"
+                                   decoration-danger="l10n_sv_dte_state == 'rejected'"
+                                   decoration-warning="l10n_sv_dte_state in ('contingencia', 'invalidating')"/>
+                            <field name="l10n_sv_dte_state_changed_at"
+                                   invisible="l10n_sv_dte_state_changed_at == False"/>
                         </group>
-                        <group string="Estado MH">
-                            <field name="l10n_sv_dte_codigo_generacion" placeholder="El sistema lo generará al firmar"/>
-                            <field name="l10n_sv_dte_numero_control"/>
-                            <field name="l10n_sv_dte_sello_recepcion"/>
+                        <group string="Identificadores MH (auto-generados)">
+                            <field name="l10n_sv_dte_codigo_generacion"
+                                   placeholder="UUID se generará al firmar"/>
+                            <field name="l10n_sv_dte_numero_control"
+                                   placeholder="DTE-XX-XXXXXXXX-XXXXXXXXXXXXXXX"/>
+                            <field name="l10n_sv_dte_sello_recepcion"
+                                   placeholder="Lo asigna el MH al procesar"/>
+                            <field name="l10n_sv_dte_invalidated_at"
+                                   invisible="l10n_sv_dte_state != 'invalidated'"/>
                         </group>
+                    </group>
+                    <group string="Contingencia">
+                        <field name="l10n_sv_dte_contingencia"/>
+                        <field name="l10n_sv_dte_tipo_contingencia"
+                               invisible="not l10n_sv_dte_contingencia"
+                               required="l10n_sv_dte_contingencia"/>
+                    </group>
+                    <group string="Pago y Observaciones">
+                        <field name="l10n_sv_dte_forma_pago_id"
+                               domain="[('active', '=', True)]"
+                               options="{'no_create': True}"/>
+                        <field name="l10n_sv_dte_num_pago_electronico"/>
+                        <field name="l10n_sv_dte_observaciones" nolabel="1" colspan="2"
+                               placeholder="Observaciones opcionales que se incluirán en la sección extension del DTE enviado al MH."/>
+                    </group>
+                    <group string="Tracking de Envío">
+                        <field name="l10n_sv_dte_send_attempts" readonly="1"/>
+                        <field name="l10n_sv_dte_last_attempt_at" readonly="1"
+                               invisible="l10n_sv_dte_last_attempt_at == False"/>
+                        <field name="l10n_sv_dte_last_error" readonly="1"
+                               invisible="l10n_sv_dte_last_error == False"
+                               style="color: #b22222;"/>
+                        <button name="%(l10n_sv_dte.action_l10n_sv_dte_log)d"
+                                string="Ver bitácora"
+                                type="action"
+                                class="btn-link"
+                                icon="fa-list"
+                                context="{'search_default_move_id': id}"/>
+                    </group>
+                    <group string="Detalle técnico"
+                           invisible="l10n_sv_dte_state == 'draft'">
+                        <field name="l10n_sv_dte_json" nolabel="1"
+                               widget="ace" options="{'mode': 'json'}"
+                               readonly="1"
+                               groups="base.group_no_one"/>
+                        <field name="l10n_sv_dte_signed" nolabel="1"
+                               readonly="1"
+                               groups="base.group_no_one"/>
+                        <field name="l10n_sv_dte_response" nolabel="1"
+                               widget="ace" options="{'mode': 'json'}"
+                               readonly="1"
+                               groups="base.group_no_one"/>
+                    </group>
+                    <group string="Código QR (verificación MH)"
+                           invisible="l10n_sv_dte_qr_url == False"
+                           groups="base.group_no_one">
+                        <field name="l10n_sv_dte_qr_url" readonly="1" widget="url"
+                               nolabel="1"/>
+                        <field name="l10n_sv_dte_qr_image" widget="image"
+                               nolabel="1"
+                               options="{'preview_image': 'l10n_sv_dte_qr_image', 'zoom': true, 'width': 200}"
+                               readonly="1"
+                               style="max-width: 200px;"/>
                     </group>
                 </page>
             </xpath>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="report_l10n_sv_dte_invoice_document">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="company" t-value="o.company_id"/>
+                    <t t-set="partner" t-value="o.partner_id"/>
+                    <t t-set="tipo_dte_label" t-value="dict(o._fields['l10n_sv_dte_tipo_doc'].selection).get(o.l10n_sv_dte_tipo_doc, '')"/>
+                    <t t-call="web.external_layout">
+                        <div class="page" style="font-size: 11px;">
+
+                            <div class="dte-header" style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 15px;">
+                                <div style="flex: 1;">
+                                    <h2 style="margin: 0;"><t t-esc="company.name"/></h2>
+                                    <div><strong>NIT:</strong> <t t-esc="company.l10n_sv_nit or ''"/></div>
+                                    <div><strong>NRC:</strong> <t t-esc="company.l10n_sv_nrc or ''"/></div>
+                                    <div><strong>Giro:</strong> <t t-esc="company.l10n_sv_giro or ''"/></div>
+                                    <div><t t-esc="company.street or ''"/></div>
+                                    <div>
+                                        <t t-esc="company.l10n_sv_municipio_id.name or ''"/>,
+                                        <t t-esc="company.state_id.name or ''"/>, El Salvador
+                                    </div>
+                                    <div t-if="company.l10n_sv_telefono">Tel: <t t-esc="company.l10n_sv_telefono"/></div>
+                                    <div t-if="company.l10n_sv_correo">Email: <t t-esc="company.l10n_sv_correo"/></div>
+                                </div>
+                                <div style="text-align: center; padding: 0 15px; border-left: 1px solid #ccc; border-right: 1px solid #ccc;">
+                                    <h3 style="margin: 0; color: #333;">DOCUMENTO TRIBUTARIO ELECTRÓNICO</h3>
+                                    <h4 style="margin: 5px 0;"><t t-esc="tipo_dte_label"/></h4>
+                                    <div style="font-size: 10px;">
+                                        Ambiente: <t t-esc="dict(company._fields['l10n_sv_ambiente'].selection).get(company.l10n_sv_ambiente, '')"/>
+                                    </div>
+                                </div>
+                                <div style="text-align: right; padding-left: 15px;">
+                                    <div t-if="o.l10n_sv_dte_qr_image" style="margin-bottom: 5px;">
+                                        <img t-att-src="o.get_qr_data_url()"
+                                             style="width: 130px; height: 130px;"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dte-identificacion" style="display: flex; gap: 20px; margin-bottom: 15px; font-size: 10px;">
+                                <div style="flex: 1;">
+                                    <table class="table table-sm" style="width: 100%;">
+                                        <tr>
+                                            <td style="width: 40%;"><strong>Número de Control:</strong></td>
+                                            <td><t t-esc="o.l10n_sv_dte_numero_control or ''"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Código de Generación:</strong></td>
+                                            <td><t t-esc="o.l10n_sv_dte_codigo_generacion or ''"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Sello de Recepción:</strong></td>
+                                            <td>
+                                                <t t-if="o.l10n_sv_dte_sello_recepcion" t-esc="o.l10n_sv_dte_sello_recepcion"/>
+                                                <em t-else="">Pendiente</em>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div style="flex: 1;">
+                                    <table class="table table-sm" style="width: 100%;">
+                                        <tr>
+                                            <td style="width: 40%;"><strong>Fecha Emisión:</strong></td>
+                                            <td><t t-esc="o.invoice_date and o.invoice_date.strftime('%d/%m/%Y') or ''"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Hora Emisión:</strong></td>
+                                            <td><t t-esc="o.create_date and o.create_date.strftime('%H:%M:%S') or ''"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Moneda:</strong></td>
+                                            <td><t t-esc="o.currency_id.name"/></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="dte-receptor" style="margin-bottom: 15px; border: 1px solid #ccc; padding: 8px; background: #f9f9f9;">
+                                <strong>CLIENTE:</strong>
+                                <strong style="margin-left: 20px;"><t t-esc="partner.name or ''"/></strong>
+                                <div style="margin-top: 5px;">
+                                    <t t-if="o.l10n_sv_dte_tipo_doc == '01'">
+                                        <span t-if="partner.l10n_sv_nit"><strong>NIT:</strong> <t t-esc="partner.l10n_sv_nit"/></span>
+                                        <span t-elif="partner.l10n_sv_num_documento">
+                                            <strong>Doc:</strong> <t t-esc="partner.l10n_sv_tipo_documento_id.code or ''"/>-<t t-esc="partner.l10n_sv_num_documento"/>
+                                        </span>
+                                    </t>
+                                    <t t-else="">
+                                        <span t-if="partner.l10n_sv_nit"><strong>NIT:</strong> <t t-esc="partner.l10n_sv_nit"/></span>
+                                        <span t-if="partner.l10n_sv_nrc" style="margin-left: 15px;"><strong>NRC:</strong> <t t-esc="partner.l10n_sv_nrc"/></span>
+                                    </t>
+                                </div>
+                                <div t-if="partner.street">
+                                    <t t-esc="partner.street"/>,
+                                    <t t-esc="partner.l10n_sv_municipio_id.name or ''"/>,
+                                    <t t-esc="partner.state_id.name or ''"/>
+                                </div>
+                                <div t-if="partner.l10n_sv_giro"><strong>Giro:</strong> <t t-esc="partner.l10n_sv_giro"/></div>
+                            </div>
+
+                            <div class="dte-cuerpo" style="margin-bottom: 15px;">
+                                <table class="table table-sm table-bordered" style="width: 100%;">
+                                    <thead style="background: #eee;">
+                                        <tr>
+                                            <th style="width: 4%;">#</th>
+                                            <th style="width: 8%;">Cant.</th>
+                                            <th style="width: 10%;">Código</th>
+                                            <th>Descripción</th>
+                                            <th style="width: 12%; text-align: right;">P. Unitario</th>
+                                            <th style="width: 10%; text-align: right;">Descuento</th>
+                                            <th style="width: 12%; text-align: right;">Gravada</th>
+                                            <th style="width: 10%; text-align: right;">IVA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="o.invoice_line_ids.filtered(lambda l: not l.display_type)" t-as="line">
+                                            <t t-set="iva_line" t-value="sum(tax.amount * line.price_subtotal / 100.0 for tax in line.tax_ids if tax.l10n_sv_tributo_id and tax.l10n_sv_tributo_id.code == '20')"/>
+                                            <tr>
+                                                <td><t t-esc="line_index + 1"/></td>
+                                                <td><t t-esc="'%.2f' % line.quantity"/></td>
+                                                <td><t t-esc="line.product_id.default_code or 'SERV'"/></td>
+                                                <td><t t-esc="line.name"/></td>
+                                                <td style="text-align: right;"><t t-esc="'%.2f' % line.price_unit"/></td>
+                                                <td style="text-align: right;">
+                                                    <t t-esc="'%.2f' % (line.discount and (line.price_unit * line.quantity * line.discount / 100.0) or 0.0)"/>
+                                                </td>
+                                                <td style="text-align: right;"><t t-esc="'%.2f' % line.price_subtotal"/></td>
+                                                <td style="text-align: right;"><t t-esc="'%.2f' % iva_line"/></td>
+                                            </tr>
+                                        </t>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="dte-tributos" t-if="any(line.tax_ids.filtered(lambda t: t.l10n_sv_tributo_id) for line in o.invoice_line_ids if not line.display_type)" style="margin-bottom: 15px;">
+                                <strong>Tributos aplicados:</strong>
+                                <table class="table table-sm" style="width: 60%;">
+                                    <t t-set="tributos_total" t-value="{}"/>
+                                    <t t-foreach="o.invoice_line_ids.filtered(lambda l: not l.display_type)" t-as="line">
+                                        <t t-foreach="line.tax_ids.filtered(lambda t: t.l10n_sv_tributo_id)" t-as="tax">
+                                            <t t-set="tr_code" t-value="tax.l10n_sv_tributo_id.code"/>
+                                            <t t-set="tr_amount" t-value="(line.price_subtotal * tax.amount / 100.0)"/>
+                                            <t t-set="current" t-value="tributos_total.get(tr_code, {'code': tr_code, 'name': tax.l10n_sv_tributo_id.name, 'valor': 0.0})"/>
+                                            <t t-set="dummy" t-value="current.update({'valor': current['valor'] + abs(tr_amount)})"/>
+                                            <t t-set="dummy" t-value="tributos_total.update({tr_code: current})"/>
+                                        </t>
+                                    </t>
+                                    <t t-foreach="tributos_total.values()" t-as="tr">
+                                        <tr>
+                                            <td style="width: 10%;"><t t-esc="tr['code']"/></td>
+                                            <td><t t-esc="tr['name']"/></td>
+                                            <td style="text-align: right; width: 20%;">
+                                                <t t-esc="'%.2f' % tr['valor']"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </table>
+                            </div>
+
+                            <div class="dte-resumen" style="display: flex; gap: 20px; margin-bottom: 15px;">
+                                <div t-if="o.l10n_sv_dte_pagos" style="flex: 1;">
+                                    <strong>Forma de Pago:</strong>
+                                    <table class="table table-sm" style="width: 100%;">
+                                        <thead style="background: #eee;">
+                                            <tr>
+                                                <th>Código</th>
+                                                <th>Plazo</th>
+                                                <th style="text-align: right;">Monto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <t t-foreach="o.l10n_sv_dte_pagos or []" t-as="pago">
+                                                <tr>
+                                                    <td><t t-esc="pago.get('codigo', '')"/></td>
+                                                    <td><t t-esc="pago.get('plazo', '')"/></td>
+                                                    <td style="text-align: right;">
+                                                        <t t-esc="'%.2f' % pago.get('montoPago', 0.0)"/>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div style="flex: 1;">
+                                    <table class="table table-sm" style="width: 100%;">
+                                        <tr>
+                                            <td>Total No Sujeto:</td>
+                                            <td style="text-align: right;">$ <t t-esc="'%.2f' % o.amount_untaxed"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Gravado:</td>
+                                            <td style="text-align: right;">$ <t t-esc="'%.2f' % o.amount_untaxed"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sub-Total:</td>
+                                            <td style="text-align: right;">$ <t t-esc="'%.2f' % o.amount_untaxed"/></td>
+                                        </tr>
+                                        <tr t-if="o.amount_tax">
+                                            <td>IVA 13%:</td>
+                                            <td style="text-align: right;">$ <t t-esc="'%.2f' % o.amount_tax"/></td>
+                                        </tr>
+                                        <tr style="background: #eee; font-weight: bold;">
+                                            <td>Total a Pagar:</td>
+                                            <td style="text-align: right;">$ <t t-esc="'%.2f' % o.amount_total"/></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div t-if="o.l10n_sv_dte_observaciones" class="dte-observaciones" style="margin-bottom: 15px; padding: 8px; border: 1px solid #ccc; background: #fffbe6;">
+                                <strong>Observaciones:</strong>
+                                <div><t t-esc="o.l10n_sv_dte_observaciones"/></div>
+                            </div>
+
+                            <div class="dte-footer" style="margin-top: 30px; padding-top: 10px; border-top: 1px solid #ccc; font-size: 9px; text-align: center; color: #666;">
+                                <div>Documento generado electrónicamente conforme a los requerimientos del Ministerio de Hacienda de El Salvador.</div>
+                                <div t-if="o.l10n_sv_dte_sello_recepcion">
+                                    Sello de Recepción MH: <strong><t t-esc="o.l10n_sv_dte_sello_recepcion"/></strong>
+                                </div>
+                                <div t-if="o.l10n_sv_dte_qr_url">
+                                    Verificación en línea: <t t-esc="o.l10n_sv_dte_qr_url"/>
+                                </div>
+                            </div>
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="report_l10n_sv_dte_invoice" model="ir.actions.report">
+            <field name="name">DTE SV (PDF)</field>
+            <field name="model">account.move</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">l10n_sv_dte.report_l10n_sv_dte_invoice_document</field>
+            <field name="report_file">l10n_sv_dte.report_l10n_sv_dte_invoice_document</field>
+            <field name="print_report_name">'DTE_%s' % (object.name or 'borrador')</field>
+            <field name="binding_model_id" ref="model_account_move"/>
+            <field name="binding_type">report</field>
+            <field name="multi">False</field>
+        </record>
+
+    </data>
+</odoo>

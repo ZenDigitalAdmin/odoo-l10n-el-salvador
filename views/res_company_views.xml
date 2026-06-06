@@ -7,24 +7,73 @@
         <field name="arch" type="xml">
             <xpath expr="//sheet" position="inside">
                 <notebook>
-                    <page string="Facturación Electrónica El Salvador" name="l10n_sv_config">
+                    <page string="Facturación Electrónica SV" name="l10n_sv_config">
                         <group>
                             <group string="Identificación Fiscal">
-                                <field name="l10n_sv_nit"/>
+                                <field name="l10n_sv_nit" placeholder="0614-XXXXXX-XXX-X"/>
                                 <field name="l10n_sv_nrc"/>
                                 <field name="l10n_sv_nombre_comercial"/>
-                                <field name="l10n_sv_giro"/>
-                                <field name="l10n_sv_municipio_id"/>
+                                <field name="l10n_sv_cod_actividad_id"
+                                       placeholder="Seleccione actividad económica (CAT-019)"/>
+                                <field name="l10n_sv_desc_actividad"/>
+                                <field name="l10n_sv_tipo_establecimiento_id"
+                                       placeholder="Matriz, Sucursal, etc."/>
+                                <field name="l10n_sv_municipio_id"
+                                       placeholder="Municipio MH"/>
+                                <field name="l10n_sv_telefono" placeholder="2222-2222"/>
+                                <field name="l10n_sv_correo" placeholder="facturacion@empresa.com.sv"/>
                             </group>
-                            <group string="Configuración Hacienda (API)">
-                                <field name="l10n_sv_nit_emisor"/>
-                                <field name="l10n_sv_api_user"/>
-                                <field name="l10n_sv_api_password" password="True"/>
+                            <group string="Establecimientos (CCF)">
+                                <field name="l10n_sv_cod_estable_mh" placeholder="0001"/>
+                                <field name="l10n_sv_cod_punto_venta_mh" placeholder="0001"/>
+                            </group>
+                            <group string="Configuración API MH">
+                                <field name="l10n_sv_ambiente" widget="radio"/>
+                                <field name="l10n_sv_nit_emisor"
+                                       placeholder="NIT del emisor para autenticación"/>
+                                <button name="action_open_credentials_help"
+                                        string="¿Dónde configuro las credenciales?"
+                                        type="object"
+                                        class="btn-link"/>
+                                <div colspan="2" class="text-muted">
+                                    <p>Las credenciales de API (usuario/contraseña) se configuran en
+                                    <strong>Configuración → Técnico → Parámetros del sistema</strong>
+                                    con las claves <code>l10n_sv.api_user_&lt;company_id&gt;</code> y
+                                    <code>l10n_sv.api_password_&lt;company_id&gt;</code>.</p>
+                                </div>
+                                <button name="%(action_l10n_sv_test_connection_from_company)d"
+                                        string="Probar conexión con MH"
+                                        type="action"
+                                        class="btn-secondary"/>
+                            </group>
+                            <group string="Certificado Digital">
+                                <field name="l10n_sv_certificate_id"
+                                       placeholder="Suba el archivo .crt XML del MH"
+                                       widget="binary" required="0"/>
+                                <div colspan="2" class="text-muted">
+                                    <p>Suba el archivo <code>.crt</code> (XML) emitido por el Ministerio de Hacienda.</p>
+                                    <p><strong>Importante:</strong> Este archivo contiene la clave privada. Asegúrese de proteger
+                                    el acceso a este registro y nunca lo suba a un repositorio público.</p>
+                                </div>
                             </group>
                         </group>
                     </page>
                 </notebook>
             </xpath>
         </field>
+    </record>
+
+    <record id="action_l10n_sv_test_connection" model="ir.actions.server">
+        <field name="name">Probar Conexión MH</field>
+        <field name="model_id" ref="model_l10n_sv_api"/>
+        <field name="state">code</field>
+        <field name="code">model.action_test_connection()</field>
+    </record>
+
+    <record id="action_l10n_sv_test_connection_from_company" model="ir.actions.server">
+        <field name="name">Probar Conexión MH</field>
+        <field name="model_id" ref="model_res_company"/>
+        <field name="state">code</field>
+        <field name="code">env['l10n_sv.api'].action_test_connection()</field>
     </record>
 </odoo>

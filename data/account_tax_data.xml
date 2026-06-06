@@ -20,6 +20,7 @@
             <field name="amount">13.0</field>
             <field name="tax_group_id" ref="tax_group_iva_13"/>
             <field name="country_id" ref="base.sv"/>
+            <field name="l10n_sv_tributo_id" ref="l10n_sv_dte.tr_sv_20"/>
         </record>
 
         <record id="tax_retencion_1_ventas" model="account.tax">
@@ -30,6 +31,7 @@
             <field name="amount">-1.0</field>
             <field name="tax_group_id" ref="tax_group_retencion_1"/>
             <field name="country_id" ref="base.sv"/>
+            <field name="l10n_sv_tributo_id" ref="l10n_sv_dte.tr_sv_C5"/>
         </record>
 
     </data>
