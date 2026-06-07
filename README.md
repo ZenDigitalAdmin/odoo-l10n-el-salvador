@@ -142,6 +142,6 @@ Reporta bugs o sugerencias en
 [GitHub Issues](https://github.com/dialstudio/l10n_sv_dte/issues).
 
 <p align="center">
-  Hecho con ❤️ por <a href="https://dialstudio.dev">DIAL Studio</a> para
+  Hecho con ❤️ por <a href="https://www.linkedin.com/company/dial-studio/">DIAL Studio</a> para
   la comunidad Odoo de El Salvador.
 </p>
