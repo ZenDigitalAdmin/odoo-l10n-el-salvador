@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Odoo-19.0-714B67?style=flat-square&logo=odoo">
-  <img alt="Odoo 19.0" src="https://img.shields.io/badge/Odoo-19.0-714B67?style=flat-square&logo=odoo">
-</picture>
+![Odoo 19.0](https://img.shields.io/badge/Odoo-19.0-714B67?style=flat-square&logo=odoo)
 ![License: LGPL-3](https://img.shields.io/badge/License-LGPL--3-blue?style=flat-square)
 ![Python 3](https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
