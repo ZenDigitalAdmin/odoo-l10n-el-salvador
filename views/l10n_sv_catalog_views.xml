@@ -4,14 +4,14 @@
 
         <!-- Tipo Establecimiento CAT-009 -->
         <record id="view_l10n_sv_tipo_establecimiento_tree" model="ir.ui.view">
-            <field name="name">l10n_sv.tipo_establecimiento.tree</field>
+            <field name="name">l10n_sv.tipo_establecimiento.list</field>
             <field name="model">l10n_sv.tipo_establecimiento</field>
             <field name="arch" type="xml">
-                <tree editable="top">
+                <list editable="top">
                     <field name="code"/>
                     <field name="name"/>
                     <field name="active" widget="boolean_toggle"/>
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_l10n_sv_tipo_establecimiento_form" model="ir.ui.view">
@@ -32,19 +32,19 @@
         <record id="action_l10n_sv_tipo_establecimiento" model="ir.actions.act_window">
             <field name="name">Tipos de Establecimiento (CAT-009)</field>
             <field name="res_model">l10n_sv.tipo_establecimiento</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
 
         <!-- Tributo CAT-015 -->
         <record id="view_l10n_sv_tributo_tree" model="ir.ui.view">
-            <field name="name">l10n_sv.tributo.tree</field>
+            <field name="name">l10n_sv.tributo.list</field>
             <field name="model">l10n_sv.tributo</field>
             <field name="arch" type="xml">
-                <tree editable="top">
+                <list editable="top">
                     <field name="code"/>
                     <field name="name"/>
                     <field name="active" widget="boolean_toggle"/>
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_l10n_sv_tributo_form" model="ir.ui.view">
@@ -65,19 +65,19 @@
         <record id="action_l10n_sv_tributo" model="ir.actions.act_window">
             <field name="name">Tributos (CAT-015)</field>
             <field name="res_model">l10n_sv.tributo</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
 
         <!-- Condición Operación CAT-016 -->
         <record id="view_l10n_sv_condicion_operacion_tree" model="ir.ui.view">
-            <field name="name">l10n_sv.condicion_operacion.tree</field>
+            <field name="name">l10n_sv.condicion_operacion.list</field>
             <field name="model">l10n_sv.condicion_operacion</field>
             <field name="arch" type="xml">
-                <tree editable="top">
+                <list editable="top">
                     <field name="code"/>
                     <field name="name"/>
                     <field name="active" widget="boolean_toggle"/>
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_l10n_sv_condicion_operacion_form" model="ir.ui.view">
@@ -98,19 +98,19 @@
         <record id="action_l10n_sv_condicion_operacion" model="ir.actions.act_window">
             <field name="name">Condiciones de Operación (CAT-016)</field>
             <field name="res_model">l10n_sv.condicion_operacion</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
 
         <!-- Forma de Pago CAT-017 -->
         <record id="view_l10n_sv_forma_pago_tree" model="ir.ui.view">
-            <field name="name">l10n_sv.forma_pago.tree</field>
+            <field name="name">l10n_sv.forma_pago.list</field>
             <field name="model">l10n_sv.forma_pago</field>
             <field name="arch" type="xml">
-                <tree editable="top">
+                <list editable="top">
                     <field name="code"/>
                     <field name="name"/>
                     <field name="active" widget="boolean_toggle"/>
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_l10n_sv_forma_pago_form" model="ir.ui.view">
@@ -131,19 +131,19 @@
         <record id="action_l10n_sv_forma_pago" model="ir.actions.act_window">
             <field name="name">Formas de Pago (CAT-017)</field>
             <field name="res_model">l10n_sv.forma_pago</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
 
         <!-- Tipo Documento CAT-022 -->
         <record id="view_l10n_sv_tipo_documento_tree" model="ir.ui.view">
-            <field name="name">l10n_sv.tipo_documento.tree</field>
+            <field name="name">l10n_sv.tipo_documento.list</field>
             <field name="model">l10n_sv.tipo_documento</field>
             <field name="arch" type="xml">
-                <tree editable="top">
+                <list editable="top">
                     <field name="code"/>
                     <field name="name"/>
                     <field name="active" widget="boolean_toggle"/>
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_l10n_sv_tipo_documento_form" model="ir.ui.view">
@@ -164,19 +164,19 @@
         <record id="action_l10n_sv_tipo_documento" model="ir.actions.act_window">
             <field name="name">Tipos de Documento (CAT-022)</field>
             <field name="res_model">l10n_sv.tipo_documento</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
 
         <!-- Actividad Económica CAT-019 -->
         <record id="view_l10n_sv_actividad_economica_tree" model="ir.ui.view">
-            <field name="name">l10n_sv.actividad_economica.tree</field>
+            <field name="name">l10n_sv.actividad_economica.list</field>
             <field name="model">l10n_sv.actividad_economica</field>
             <field name="arch" type="xml">
-                <tree editable="top">
+                <list editable="top">
                     <field name="code"/>
                     <field name="description"/>
                     <field name="active" widget="boolean_toggle"/>
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_l10n_sv_actividad_economica_form" model="ir.ui.view">
@@ -207,7 +207,7 @@
         <record id="action_l10n_sv_actividad_economica" model="ir.actions.act_window">
             <field name="name">Actividades Económicas (CAT-019)</field>
             <field name="res_model">l10n_sv.actividad_economica</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
 
         <!-- Menú raíz de DTE -->

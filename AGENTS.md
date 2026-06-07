@@ -12,7 +12,7 @@ then views).
 
 | Path | Purpose |
 |------|---------|
-| `__manifest__.py` | Addon metadata, version, dependency list, load order. **Bump the version** on every change (current: `19.0.1.7.0`). |
+| `__manifest__.py` | Addon metadata, version, dependency list, load order. **Bump the version** on every change (current: `19.0.1.16.0`). |
 | `tests/` | Odoo tests (`TransactionCase`). Run with `odoo-bin --test-enable --test-tags=l10n_sv_dte`. Mock cert in `tests/common.py`. |
 | `models/__init__.py` | Imports every model. **A model file not imported here is silently not loaded** — the original `l10n_sv_api.py` was missing from this file and `self.env['l10n_sv.api']` raised at runtime. |
 | `models/account_move.py` | DTE state machine, JSON generation, JWS sign, MH send, invalidation. |

@@ -14,7 +14,7 @@
                         <group invisible="state == 'done'">
                             <field name="move_ids" colspan="2"
                                    domain="[('move_type', 'in', ('out_invoice', 'out_refund')), ('state', '=', 'posted'), ('l10n_sv_dte_state', '!=', 'processed'), ('l10n_sv_dte_state', '!=', 'invalidated')]">
-                                <tree>
+                                <list>
                                     <field name="name"/>
                                     <field name="partner_id"/>
                                     <field name="invoice_date"/>
@@ -25,7 +25,7 @@
                                            decoration-success="l10n_sv_dte_state == 'processed'"
                                            decoration-danger="l10n_sv_dte_state == 'rejected'"
                                            decoration-warning="l10n_sv_dte_state == 'contingencia'"/>
-                                </tree>
+                                </list>
                             </field>
                             <field name="include_draft"/>
                         </group>
@@ -43,14 +43,14 @@
                         <notebook invisible="state != 'done'">
                             <page string="Detalle">
                                 <field name="line_ids" nolabel="1" readonly="1">
-                                    <tree decoration-danger="not success"
+                                    <list decoration-danger="not success"
                                           decoration-success="success">
                                         <field name="name"/>
                                         <field name="partner_id"/>
                                         <field name="state"/>
                                         <field name="success" widget="boolean_toggle"/>
                                         <field name="message"/>
-                                    </tree>
+                                    </list>
                                 </field>
                             </page>
                         </notebook>

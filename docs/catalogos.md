@@ -7,12 +7,12 @@ Hacienda de El Salvador. Cada catálogo tiene un modelo
 
 | Catálogo | Modelo | CSV | Descripción |
 |----------|--------|-----|-------------|
-| CAT-009  | `l10n_sv.tipo_establecimiento` | `l10n_sv.cat009.csv` | Tipo de establecimiento (Matriz, Sucursal, Bodega, etc.) |
-| CAT-015  | `l10n_sv.tributo`            | `l10n_sv.cat015.csv` | Tributos que aplica el emisor (IVA, FOVIAL, retenciones, etc.) |
-| CAT-016  | `l10n_sv.condicion_operacion` | `l10n_sv.cat016.csv` | Condición de la operación (Contado, Crédito) |
-| CAT-017  | `l10n_sv.forma_pago`         | `l10n_sv.cat017.csv` | Forma de pago (Efectivo, Tarjeta, Transferencia, etc.) |
+| CAT-009  | `l10n_sv.tipo_establecimiento` | `l10n_sv.tipo_establecimiento.csv` | Tipo de establecimiento (Matriz, Sucursal, Bodega, etc.) |
+| CAT-015  | `l10n_sv.tributo`            | `l10n_sv.tributo.csv` | Tributos que aplica el emisor (IVA, FOVIAL, retenciones, etc.) |
+| CAT-016  | `l10n_sv.condicion_operacion` | `l10n_sv.condicion_operacion.csv` | Condición de la operación (Contado, Crédito) |
+| CAT-017  | `l10n_sv.forma_pago`         | `l10n_sv.forma_pago.csv` | Forma de pago (Efectivo, Tarjeta, Transferencia, etc.) |
 | CAT-019  | `l10n_sv.actividad_economica` | `l10n_sv.actividad_economica.csv` | 989 códigos CIIU Rev 4 (BCR) |
-| CAT-022  | `l10n_sv.tipo_documento`     | `l10n_sv.cat022.csv` | Tipo de documento de identificación del cliente |
+| CAT-022  | `l10n_sv.tipo_documento`     | `l10n_sv.tipo_documento.csv` | Tipo de documento de identificación del cliente |
 
 Adicionalmente:
 
@@ -135,7 +135,7 @@ NIT).
    con `_name = 'l10n_sv.<nombre>'` y los campos `code`, `name`, `active`.
 2. Importarlo en `models/__init__.py`.
 3. Agregar la fila ACL en `security/ir.model.access.csv`.
-4. Cargar el CSV en `data/l10n_sv.cat<NNN>.csv` con el formato:
+4. Cargar el CSV en `data/l10n_sv.<nombre>.csv` con el formato:
 
    ```csv
    id,code,name

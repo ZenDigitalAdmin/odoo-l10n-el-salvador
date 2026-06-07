@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 
 
 class ResCompany(models.Model):
@@ -85,4 +85,50 @@ class ResCompany(models.Model):
             'type': 'ir.actions.act_url',
             'url': '/web/binary/download_document?model=ir.attachment&id=%s' % (self.l10n_sv_certificate_id.id or 0),
             'target': 'self',
+        }
+
+    def action_test_mh_connection(self):
+        self.ensure_one()
+        api = self.env['l10n_sv.api']
+        config = self.get_l10n_sv_api_config()
+
+        if not config['api_user'] or not config['api_password']:
+            return self._test_connection_notification(
+                False,
+                _('Faltan credenciales'),
+                _('Configure los parámetros del sistema l10n_sv.api_user_%(cid)d y l10n_sv.api_password_%(cid)d antes de probar la conexión.') % {'cid': self.id},
+            )
+
+        token = api.authenticate(company=self, force_refresh=True)
+        if token:
+            return self._test_connection_notification(
+                True,
+                _('Conexión exitosa'),
+                _('Se obtuvo un token válido del Ministerio de Hacienda.'),
+            )
+
+        return self._test_connection_notification(
+            False,
+            _('Conexión Fallida'),
+            _('No se pudo autenticar con el MH. Verifique:\n'
+              '1) Credenciales correctas en Parámetros del sistema\n'
+              '2) NIT del emisor: %(nit)s\n'
+              '3) Ambiente: %(amb)s\n'
+              '4) URL: %(url)s') % {
+                  'nit': config['nit_emisor'] or '(vacío)',
+                  'amb': 'Pruebas' if config['ambiente'] == '00' else 'Producción',
+                  'url': api._get_base_url(config['ambiente']),
+                  },
+        )
+
+    def _test_connection_notification(self, success, title, message):
+        return {
+            'type': 'ir.actions.client',
+            'tag': 'display_notification',
+            'params': {
+                'title': title,
+                'message': message,
+                'type': 'success' if success else 'danger',
+                'sticky': True,
+            },
         }

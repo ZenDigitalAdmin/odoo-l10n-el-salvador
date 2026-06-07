@@ -22,13 +22,21 @@ lee `res.company.l10n_sv_ambiente` (campo de selección `00`/`01`).
 
 ## Autenticación
 
-POST a `/seguridad/auth` con body JSON:
+POST a `/seguridad/auth` con body **form-urlencoded**:
 
-```json
-{
-  "user": "<api_user>",
-  "pwd": "<api_password>"
-}
+```
+Content-Type: application/x-www-form-urlencoded
+
+user=<api_user>&pwd=<api_password>
+```
+
+Equivalente en curl:
+
+```bash
+curl --location 'https://apitest.dtes.mh.gob.sv/seguridad/auth' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'user=<api_user>' \
+--data-urlencode 'pwd=<api_password>'
 ```
 
 Respuesta exitosa:

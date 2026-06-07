@@ -3,10 +3,10 @@
     <data noupdate="0">
 
         <record id="view_l10n_sv_dte_log_tree" model="ir.ui.view">
-            <field name="name">l10n_sv.dte.log.tree</field>
+            <field name="name">l10n_sv.dte.log.list</field>
             <field name="model">l10n_sv.dte.log</field>
             <field name="arch" type="xml">
-                <tree decoration-danger="not success" decoration-success="success"
+                <list decoration-danger="not success" decoration-success="success"
                       decoration-muted="is_automatic">
                     <field name="attempt_at"/>
                     <field name="move_id"/>
@@ -20,7 +20,7 @@
                     <field name="response_code"/>
                     <field name="sello_recepcion"/>
                     <field name="is_automatic" widget="boolean_toggle"/>
-                </tree>
+                </list>
             </field>
         </record>
 
@@ -74,7 +74,7 @@
                             domain="[('success', '=', False)]"/>
                     <filter name="filter_automatic" string="Automáticos (cron)"
                             domain="[('is_automatic', '=', True)]"/>
-                    <group expand="0" string="Agrupar por">
+                    <group>
                         <filter name="group_operation" string="Operación"
                                 context="{'group_by': 'operation'}"/>
                         <filter name="group_move" string="Factura"
@@ -87,7 +87,7 @@
         <record id="action_l10n_sv_dte_log" model="ir.actions.act_window">
             <field name="name">Bitácora DTE</field>
             <field name="res_model">l10n_sv.dte.log</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="context">{'search_default_filter_failed': 0}</field>
         </record>
 

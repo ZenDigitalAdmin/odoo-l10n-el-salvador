@@ -2,7 +2,7 @@
 Conector API del Ministerio de Hacienda de El Salvador.
 
 Endpoints soportados:
-  - POST /seguridad/auth         (autenticación con user/pwd/nit)
+  - POST /seguridad/auth         (autenticación con user/pwd en form-urlencoded)
   - POST /seguridad/receptordte  (transmisión de DTE firmado)
   - POST /seguridad/anulardte    (invalidación de DTE)
   - POST /seguridad/contingencia (declaración de contingencia)
@@ -97,14 +97,13 @@ class L10nSvApi(models.Model):
                 return cached
 
         url = self._get_base_url(config['ambiente']) + ENDPOINTS['auth']
-        payload = {
-            'user': config['api_user'],
-            'pwd': config['api_password'],
-            'nit': config['nit_emisor'],
-        }
         try:
-            _logger.info('MH auth: POST %s (ambiente=%s, nit=%s)', ENDPOINTS['auth'], config['ambiente'], config['nit_emisor'])
-            response = requests.post(url, json=payload, timeout=DEFAULT_TIMEOUT)
+            _logger.info('MH auth: POST %s (ambiente=%s, user=%r)', ENDPOINTS['auth'], config['ambiente'], config['api_user'])
+            response = requests.post(
+                url,
+                data={'user': config['api_user'], 'pwd': config['api_password']},
+                timeout=DEFAULT_TIMEOUT,
+            )
         except requests.RequestException as e:
             _logger.error('Error de red al autenticar con MH: %s', e)
             return None
@@ -210,19 +209,7 @@ class L10nSvApi(models.Model):
     @api.model
     def action_test_connection(self, company=None):
         company = company or self.env.company
-        token = self.authenticate(company=company, force_refresh=True)
-        if token:
-            return {
-                'type': 'ir.actions.client',
-                'tag': 'display_notification',
-                'params': {
-                    'title': _('Conexión exitosa'),
-                    'message': _('Se obtuvo un token del Ministerio de Hacienda.'),
-                    'type': 'success',
-                    'sticky': False,
-                },
-            }
-        raise UserError(_('No se pudo conectar con el Ministerio de Hacienda. Verifique las credenciales y el ambiente seleccionado.'))
+        return self.authenticate(company=company, force_refresh=True)
 
     @api.model
     def cron_process_contingencia(self):
