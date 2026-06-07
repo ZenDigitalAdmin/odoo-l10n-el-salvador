@@ -224,3 +224,14 @@ __marimo__/
 
 # graphify skill output (dev-only knowledge graph, NOT part of the module)
 graphify-out/
+
+# Testing checklists (personal notes, not part of the module)
+testing/
+
+# Integration tests — real credentials excluded
+integration_tests/config.yaml
+integration_tests/config.yml
+integration_tests/.env
+integration_tests/*.crt
+integration_tests/*.pem
+integration_tests/*.key

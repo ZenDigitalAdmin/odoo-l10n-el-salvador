@@ -1,0 +1,52 @@
+# Configuración para tests de integración contra MH (ambiente pruebas).
+#
+# FORMAS DE CONFIGURAR (por orden de precedencia):
+#   1. Variables de entorno MH_* (ver abajo)
+#   2. Archivo .env (mismo directorio, con MH_* vars)
+#   3. Este archivo (config.yaml, copia local)
+#
+# ¡NUNCA committear config.yaml ni .env! (están en .gitignore)
+#
+# ────────────────────────────────────────────────────────────
+# Variables de entorno equivalentes (MH_<nombre>):
+# ────────────────────────────────────────────────────────────
+#   MH_AMBIENTE         → mh.ambiente          ("00" pruebas, "01" prod)
+#   MH_API_USER         → mh.api_user
+#   MH_API_PASSWORD     → mh.api_password
+#   MH_NIT_EMISOR       → mh.nit_emisor
+#   MH_CERT_PATH        → certificate.path     (ruta al XML del certificado)
+#   MH_COD_ESTABLE      → mh.cod_estable       (default: 0001)
+#   MH_COD_PUNTO_VENTA  → mh.cod_punto_venta   (default: 0001)
+#   MH_TIMEOUT          → mh.timeout           (default: 60)
+#   MH_RECEPTOR_NIT     → dte_test.receptor_nit
+#   MH_RECEPTOR_NOMBRE  → dte_test.receptor_nombre
+#   MH_RECEPTOR_NRC     → dte_test.receptor_nrc
+#   MH_RECEPTOR_DIRECCION → dte_test.receptor_direccion
+#
+# Ejemplo de .env:
+#   MH_AMBIENTE=00
+#   MH_API_USER=USUARIO_123
+#   MH_API_PASSWORD=pass_segura
+#   MH_NIT_EMISOR=06141406100012
+#   MH_CERT_PATH=./certificados/mi_certificado.crt
+
+mh:
+  ambiente: "00"              # "00" = pruebas, "01" = producción
+  api_user: "API_USER_123"    # usuario MH
+  api_password: "PASSWORD"    # contraseña MH
+  nit_emisor: "06141406100012"  # NIT sin guiones
+  cod_estable: "0001"
+  cod_punto_venta: "0001"
+  timeout: 60                 # segundos
+
+certificate:
+  path: "./test_cert.crt"     # ruta al XML del certificado MH
+
+# Opcional: para tests de envío de DTE real
+dte_test:
+  tipo_doc: "01"              # tipo de DTE a enviar (01=FCF, 03=CCF)
+  receptor_nombre: "Cliente Prueba, S.A. de C.V."
+  receptor_nit: "06140101234567"
+  receptor_nrc: "7654321"
+  receptor_giro: "Comercio"
+  receptor_direccion: "Calle Cliente 456, San Salvador"

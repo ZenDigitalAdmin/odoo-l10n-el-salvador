@@ -13,8 +13,8 @@ Documento Tributario Electrónico (DTE) conforme a los requerimientos del
 > Comprobantes de Crédito Fiscal, Facturas y Documentos Equivalentes.
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/dialstudio">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" height="52">
+  <a href="https://ko-fi.com/dialstudio">
+    <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Support me on Ko-fi" height="52">
   </a>
 </p>
 
