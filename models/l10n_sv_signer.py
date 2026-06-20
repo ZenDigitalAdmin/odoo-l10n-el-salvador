@@ -151,7 +151,7 @@ class L10nSvSigner(models.AbstractModel):
         :param dte_payload: dict con la estructura del DTE
         :return: str JWS firmado
         """
-        self.ensure_one()
+        # self.ensure_one()  # AbstractModel, no aplica
         company = move.company_id
         if not company.l10n_sv_certificate_id:
             raise UserError(_('La compañía no tiene un certificado digital MH configurado. Suba el archivo .crt en la configuración de la compañía.'))
