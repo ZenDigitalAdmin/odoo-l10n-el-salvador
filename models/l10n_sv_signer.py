@@ -62,7 +62,7 @@ class L10nSvSigner(models.AbstractModel):
         """
         import xml.etree.ElementTree as ET
         try:
-            root = ET.fromstring(cert_xml_bytes)
+            root = ET.fromstring(base64.b64decode(cert_xml_bytes) if not cert_xml_bytes.strip().startswith(b"<") else cert_xml_bytes)
         except ET.ParseError as e:
             raise UserError(_('El archivo del certificado no es un XML válido: %s') % e)
 
