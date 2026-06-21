@@ -93,7 +93,7 @@ class L10nSvSigner(models.AbstractModel):
             raise UserError(_('El contenido del certificado no es Base64 válido: %s') % e)
 
         try:
-            private_key = serialization.load_pem_private_key(
+            private_key = serialization.load_der_private_key(
                 pem_bytes, password=None, backend=default_backend(),
             )
         except Exception as e:
