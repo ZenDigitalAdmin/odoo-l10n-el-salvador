@@ -271,7 +271,7 @@ class AccountMove(models.Model):
             'tributos': {},
             'iva_items': {},
         }
-        for idx, line in enumerate(self.invoice_line_ids.filtered(lambda l: not l.display_type), start=1):
+        for idx, line in enumerate(self.invoice_line_ids.filtered(lambda l: l.display_type not in ('line_section', 'line_note')), start=1):
             price_unit = round(line.price_unit, 2)
             discount_pct = line.discount or 0.0
             descuento = round(price_unit * line.quantity * (discount_pct / 100.0), 2)
