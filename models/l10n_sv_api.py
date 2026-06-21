@@ -3,7 +3,7 @@ Conector API del Ministerio de Hacienda de El Salvador.
 
 Endpoints soportados:
   - POST /seguridad/auth         (autenticación con user/pwd en form-urlencoded)
-  - POST /seguridad/receptordte  (transmisión de DTE firmado)
+  - POST /fesv/recepciondte  (transmisión de DTE firmado)
   - POST /seguridad/anulardte    (invalidación de DTE)
   - POST /seguridad/contingencia (declaración de contingencia)
 
@@ -23,7 +23,7 @@ _logger = logging.getLogger(__name__)
 
 ENDPOINTS = {
     'auth': '/seguridad/auth',
-    'receptordte': '/seguridad/receptordte',
+    'receptordte': '/fesv/recepciondte',
     'anulardte': '/seguridad/anulardte',
     'contingencia': '/seguridad/contingencia',
 }
